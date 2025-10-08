@@ -8,7 +8,7 @@ The top-level definition of the app.
 import SwiftUI
 
 @main
-struct LandmarksApp: App {
+struct CarrersApp: App {
     var body: some Scene {
         WindowGroup {
             CareerList()
