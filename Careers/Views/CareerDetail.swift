@@ -76,7 +76,7 @@ struct CareerDetail: View {
 
 #Preview {
     NavigationStack {
-        if let first = careers.first {
+        if let first = careersAll.first {
             CareerDetail(career: first)
         } else {
             Text("No careers loaded")

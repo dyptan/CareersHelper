@@ -15,3 +15,9 @@ struct CarrersApp: App {
         }
     }
 }
+
+#Preview {
+    NavigationView {
+        CareerList()
+    }
+}

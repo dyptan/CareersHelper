@@ -5,7 +5,7 @@
 import Foundation
 
 // Load careers from bundled JSON, similar to `landmarks`.
-var careers: [Career] = load("careersData.json")
+var careersAll: [Career] = load("careersData.json")
 
 
 func load<T: Decodable>(_ filename: String) -> T {

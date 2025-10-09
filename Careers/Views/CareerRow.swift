@@ -77,7 +77,7 @@ private struct LuckView: View {
 
 #Preview {
     // Ensure you have at least one career loaded to preview
-    if let first = careers.first {
+    if let first = careersAll.first {
         CareerRow(career: first)
             .padding()
     }

@@ -9,25 +9,24 @@
 import SwiftUI
 
 struct PersonaRow: View {
-    var category: CareerCategory
+    var persona: InterestPersona
     var body: some View {
         HStack(spacing: 12) {
-            Text(CareerCategory.icon(for: category))
-                .font(.system(size: 22))
-                .frame(width: 28)
-            VStack(alignment: .leading, spacing: 2) {
-                Text(category.rawValue)
-                Text(category.examples)
-                    .font(.caption2)
+            Text(persona.icon)
+                .font(.system(size: 28))
+            VStack(alignment: .leading) {
+                Text(persona.rawValue)
+                    .font(.headline)
+                Text(CareerCategory.subtitle(for: persona))
+                    .font(.caption)
                     .foregroundStyle(.secondary)
             }
+            .padding(.vertical, 6)
+            .accessibilityIdentifier("PersonaRow_\(persona.shortTitle)")
         }
-        .padding(.vertical, 6)
-        .tag(Optional(category))
-        .accessibilityIdentifier("CategoryRow_\(category.rawValue)")
     }
 }
 
 #Preview {
-    CategoryRow(category: CareerCategory.design)
+    PersonaRow(persona: InterestPersona.people)
 }
