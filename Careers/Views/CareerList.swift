@@ -10,11 +10,15 @@ struct CareerList: View {
             result[career.persona, default: []].append(career)
         }
     }
+    
+    func groupedCategories(_ categories: [CareerCategory]) -> [CareerCategory]
+    {
+        Array(Set(careersAll.map(\.category)).intersection(categories))
+    }
 
     var allPersonas: [InterestPersona] { Array(groupedCareersByPersona.keys) }
 
-    private func categoriesFor(_ persona: InterestPersona)
-        -> [CareerCategory]
+    private func categoriesFor(_ persona: InterestPersona) -> [CareerCategory]
     {
         careersAll.filter { $0.persona == persona }.map { $0.category }
     }
@@ -33,7 +37,7 @@ struct CareerList: View {
 
     private func categoryRows(categories: [CareerCategory]) -> some View {
         List {
-            ForEach(categories) { category in
+            ForEach(groupedCategories(categories)) { category in
                 let filtered: [Career] = careersAll.filter {
                     $0.category == category
                 }
@@ -62,5 +66,7 @@ struct CareerList: View {
 }
 
 #Preview {
-    CareerList()
+    NavigationStack {
+        CareerList()
+    }
 }

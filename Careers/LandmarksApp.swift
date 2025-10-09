@@ -11,13 +11,15 @@ import SwiftUI
 struct CarrersApp: App {
     var body: some Scene {
         WindowGroup {
-            CareerList()
+            NavigationStack {
+                CareerList()
+            }
         }
     }
 }
 
 #Preview {
-    NavigationView {
+    NavigationStack {
         CareerList()
     }
 }
