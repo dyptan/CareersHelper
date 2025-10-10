@@ -1,22 +1,13 @@
 import SwiftUI
 
 struct CareerList: View {
-    @State private var selectedPersona: InterestPersona? = InterestPersona
-        .creative
-    @State private var selectedCategory: CareerCategory? = nil
-    @State private var selectedCareer: Career? = nil
-    var groupedCareersByPersona: [InterestPersona: [Career]] {
-        careersAll.reduce(into: [:]) { result, career in
-            result[career.persona, default: []].append(career)
-        }
-    }
-    
+   
     func groupedCategories(_ categories: [CareerCategory]) -> [CareerCategory]
     {
         Array(Set(careersAll.map(\.category)).intersection(categories))
     }
 
-    var allPersonas: [InterestPersona] { Array(groupedCareersByPersona.keys) }
+    var allPersonas: [InterestPersona] { Array(Set(careersAll.map(\.persona))) }
 
     private func categoriesFor(_ persona: InterestPersona) -> [CareerCategory]
     {

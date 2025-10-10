@@ -46,6 +46,7 @@ struct CareerDetail: View {
             }
             .padding(.bottom, 24)
         }
+        .accessibilityIdentifier("CareerDetailRoot")
         .navigationTitle(career.id)
         .navigationBarTitleDisplayMode(.inline)
     }
