@@ -25,8 +25,8 @@ struct CareerDetail: View {
                     .foregroundStyle(.secondary)
 
                 HStack(spacing: 16) {
-                    labelBox(title: "Difficulty", content: stars(level: career.difficulty))
-                    labelBox(title: "Luck", content: Text("\(Int((career.luckFactor * 100).rounded()))%"))
+                    labelBox(title: "Education", content: stars(level: career.difficulty))
+                    labelBox(title: "Chances", content: Text(String(repeating: "🍀", count: career.chances)))
                     labelBox(title: "Income", content: Text("\(career.income)"))
                     labelBox(title: "Reward", content: Text(career.reward))
                 }

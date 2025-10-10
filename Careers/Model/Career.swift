@@ -279,10 +279,10 @@ enum InterestPersona: String, CaseIterable, Identifiable, Codable {
 struct Career: Identifiable, Hashable, Decodable {
     let id: String
     var category: CareerCategory
-    // 1..5 scale for difficulty (kid-friendly)
+    // 0..5 education requirement scale
     var difficulty: Int
-    // 0.0..1.0 luck factor (higher means more luck-dependent)
-    var luckFactor: Double
+    // 1..5 clovers: higher = harder to get paid work
+    var chances: Int
     // Annual income in currency units
     var income: Int
     var summary: String
@@ -294,7 +294,7 @@ struct Career: Identifiable, Hashable, Decodable {
     init(id: String,
          category: CareerCategory,
          difficulty: Int,
-         luckFactor: Double,
+         chances: Int,
          income: Int,
          summary: String,
          icon: String,
@@ -302,8 +302,8 @@ struct Career: Identifiable, Hashable, Decodable {
     {
         self.id = id
         self.category = category
-        self.difficulty = max(1, min(5, difficulty))
-        self.luckFactor = max(0.0, min(1.0, luckFactor))
+        self.difficulty = max(0, min(5, difficulty))
+        self.chances = max(1, min(5, chances))
         self.income = income
         self.summary = summary
         self.icon = icon
@@ -313,27 +313,25 @@ struct Career: Identifiable, Hashable, Decodable {
     var persona: InterestPersona { category.persona }
     
     private enum CodingKeys: String, CodingKey {
-        case id, category, difficulty, luckFactor, income, summary, icon, reward
+        case id, category, difficulty, chances, income, summary, icon, reward
     }
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
-        // Generate UUID if missing
         self.id = try container.decode(String.self, forKey: .id)
         self.category = try container.decode(CareerCategory.self, forKey: .category)
 
         let decodedDifficulty = try container.decodeIfPresent(Int.self, forKey: .difficulty) ?? 3
-        self.difficulty = max(1, min(5, decodedDifficulty))
+        self.difficulty = max(0, min(5, decodedDifficulty))
 
-        let decodedLuck = try container.decodeIfPresent(Double.self, forKey: .luckFactor) ?? 0.5
-        self.luckFactor = max(0.0, min(1.0, decodedLuck))
+        let decodedChances = try container.decodeIfPresent(Int.self, forKey: .chances) ?? 3
+        self.chances = max(1, min(5, decodedChances))
 
         self.income = try container.decodeIfPresent(Int.self, forKey: .income) ?? 0
         self.summary = try container.decodeIfPresent(String.self, forKey: .summary) ?? ""
         self.icon = try container.decodeIfPresent(String.self, forKey: .icon) ?? "💼"
 
-        // Prefer provided reward; otherwise derive from income
         if let reward = try container.decodeIfPresent(String.self, forKey: .reward) {
             self.reward = reward
         } else {

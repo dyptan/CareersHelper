@@ -36,7 +36,7 @@ struct CareerRow: View {
 
                 HStack(spacing: 8) {
                     DifficultyView(level: career.difficulty)
-                    LuckView(probability: career.luckFactor)
+                    ChancesView(chances: career.chances)
                 }
             }
             Spacer()
@@ -48,35 +48,31 @@ struct CareerRow: View {
 private struct DifficultyView: View {
     let level: Int
     var body: some View {
-        // 1..5 stars using emoji
+        // 0..5 education stars using emoji
         let filled = max(0, min(5, level))
         let empty = max(0, 5 - filled)
         HStack(spacing: 2) {
             Text(String(repeating: "⭐️", count: filled) + String(repeating: "☆", count: empty))
                 .font(.caption)
-                .accessibilityLabel("Difficulty \(filled) out of 5")
+                .accessibilityLabel("Education level \(filled) out of 5")
         }
     }
 }
 
-private struct LuckView: View {
-    let probability: Double
+private struct ChancesView: View {
+    let chances: Int
     var body: some View {
-        let clovers = max(0, min(5, Int((probability * 5).rounded())))
-        let percent = Int((probability * 100).rounded())
+        let c = max(1, min(5, chances))
         HStack(spacing: 4) {
-            Text(String(repeating: "🍀", count: clovers))
-            Text("\(percent)%")
-                .foregroundStyle(.secondary)
+            Text(String(repeating: "🍀", count: c))
         }
         .font(.caption)
         .accessibilityElement(children: .combine)
-        .accessibilityLabel("Luck \(percent) percent")
+        .accessibilityLabel("Chances \(c) clovers. Higher means harder to get paid.")
     }
 }
 
 #Preview {
-    // Ensure you have at least one career loaded to preview
     if let first = careersAll.first {
         CareerRow(career: first)
             .padding()
