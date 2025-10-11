@@ -1,10 +1,5 @@
-/*
- Storage for careers model data.
-*/
-
 import Foundation
 
-// Load careers from bundled JSON, similar to `landmarks`.
 var careersAll: [Career] = load("careersData.json")
 
 

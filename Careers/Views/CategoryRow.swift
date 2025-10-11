@@ -1,11 +1,3 @@
-//
-//  CategoryRow.swift
-//  Careers
-//
-//  Created by Ivan Dyptan on 08.10.25.
-//  Copyright © 2025 Apple. All rights reserved.
-//
-
 import SwiftUI
 
 struct CategoryRow: View, Hashable {

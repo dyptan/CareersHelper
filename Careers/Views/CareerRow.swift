@@ -1,10 +1,3 @@
-//
-//  CareerRow.swift
-//  Landmarks
-//
-//  Created by Ivan Dyptan on 03.10.25.
-//
-
 import SwiftUI
 
 struct CareerRow: View {
@@ -15,7 +8,7 @@ struct CareerRow: View {
             Text(career.icon)
                 .font(.system(size: 28))
                 .frame(width: 40, height: 40)
-                .background(Color(.systemGray6))
+                .background(Color(.systemGray))
                 .clipShape(RoundedRectangle(cornerRadius: 8))
 
             VStack(alignment: .leading, spacing: 6) {

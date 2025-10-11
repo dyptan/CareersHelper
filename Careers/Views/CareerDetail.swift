@@ -1,10 +1,3 @@
-//
-//  CareerDetail.swift
-//  Landmarks
-//
-//  Created by Ivan Dyptan on 03.10.25.
-//
-
 import SwiftUI
 
 struct CareerDetail: View {
@@ -40,7 +33,7 @@ struct CareerDetail: View {
                 }
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .background(Color(.systemGray6))
+                .background(Color(.systemMint))
                 .clipShape(RoundedRectangle(cornerRadius: 16))
                 .padding(.horizontal)
             }
@@ -48,7 +41,7 @@ struct CareerDetail: View {
         }
         .accessibilityIdentifier("CareerDetailRoot")
         .navigationTitle(career.id)
-        .navigationBarTitleDisplayMode(.inline)
+
     }
 
     private func stars(level: Int) -> some View {
@@ -70,7 +63,7 @@ struct CareerDetail: View {
         }
         .padding(12)
         .frame(maxWidth: .infinity)
-        .background(Color(.systemGray6))
+        .background(Color(.systemMint))
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
