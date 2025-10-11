@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct CarrersApp: App {
+struct CareersApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {

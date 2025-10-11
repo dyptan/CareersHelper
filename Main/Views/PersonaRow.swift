@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct PersonaRow: View {
-    var persona: InterestPersona
+    var persona: ByInterest
     var body: some View {
         HStack(spacing: 12) {
             Text(persona.icon)
@@ -20,5 +20,5 @@ struct PersonaRow: View {
 }
 
 #Preview {
-    PersonaRow(persona: InterestPersona.people)
+    PersonaRow(persona: ByInterest.people)
 }

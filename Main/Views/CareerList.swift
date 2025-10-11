@@ -7,9 +7,9 @@ struct CareerList: View {
         Array(Set(careersAll.map(\.category)).intersection(categories))
     }
 
-    var allPersonas: [InterestPersona] { Array(Set(careersAll.map(\.persona))) }
+    var allPersonas: [ByInterest] { Array(Set(careersAll.map(\.persona))) }
 
-    private func categoriesFor(_ persona: InterestPersona) -> [CareerCategory]
+    private func categoriesFor(_ persona: ByInterest) -> [CareerCategory]
     {
         careersAll.filter { $0.persona == persona }.map { $0.category }
     }

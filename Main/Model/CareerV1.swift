@@ -1,16 +1,3 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-Storage for model data.
-*/
-//
-//  Career.swift
-//  Landmarks
-//
-//  Created by Ivan Dyptan on 03.10.25.
-//
-
 import Foundation
 
 enum CareerCategory: String, CaseIterable, Identifiable, Codable {
@@ -21,7 +8,7 @@ enum CareerCategory: String, CaseIterable, Identifiable, Codable {
     case health = "Health"
     case technology = "Technology"
     case education = "Education"
-    case nature = "Nature"
+    case outdoors = "Outdoors"
     case design = "Design"
     case language = "Language"
     case media = "Media"
@@ -41,14 +28,14 @@ enum CareerCategory: String, CaseIterable, Identifiable, Codable {
 
     var id: String { rawValue }
     
-    static func subtitle(for persona: InterestPersona) -> String {
+    static func subtitle(for persona: ByInterest) -> String {
         switch persona {
-        case .people: return "Helping, teaching, protecting"
-        case .tools: return "Building, fixing, designing"
-        case .creative: return "Drawing, music, cooking"
-        case .nature: return "Animals, parks, outdoors"
-        case .sports: return "Training, competing, teamwork"
-        case .science: return "Health, experiments, labs"
+        case .people: return "Playing doctor, teacher, policeman"
+        case .tools: return "Crafting, tinkering, puzzle solving"
+        case .creative: return "Drawing, singing, dancing"
+        case .outdoors: return "Feeding animals, fishing, growing plants"
+        case .sports: return "Agile games, competitions"
+        case .science: return "Observing ants, stars, lab experiments"
         }
     }
 
@@ -61,7 +48,7 @@ enum CareerCategory: String, CaseIterable, Identifiable, Codable {
         case .sports: return "🏆"
         case .health: return "🩺"
         case .education: return "📚"
-        case .nature: return "🌲"
+        case .outdoors: return "🌲"
 
         // New categories
         case .design: return "🖌️"
@@ -83,7 +70,7 @@ enum CareerCategory: String, CaseIterable, Identifiable, Codable {
         }
     }
 
-    var persona: InterestPersona {
+    var persona: ByInterest {
         switch self {
         case .publicServices, .education, .health:
             return .people
@@ -91,8 +78,8 @@ enum CareerCategory: String, CaseIterable, Identifiable, Codable {
             return .tools
         case .arts:
             return .creative
-        case .nature:
-            return .nature
+        case .outdoors:
+            return .outdoors
         case .sports:
             return .sports
 
@@ -116,7 +103,7 @@ enum CareerCategory: String, CaseIterable, Identifiable, Codable {
         case .aviation:
             return .tools
         case .maritime:
-            return .nature
+            return .outdoors
         case .logistics:
             return .tools
         case .retail:
@@ -148,7 +135,7 @@ enum CareerCategory: String, CaseIterable, Identifiable, Codable {
             return "Drawing, music, dance, cooking, and creating beautiful things that make people smile."
         case .sports:
             return "Playing and coaching sports, staying active, and working as a team to reach goals."
-        case .nature:
+        case .outdoors:
             return "Caring for parks, animals, and our planet. Work outside and protect nature."
 
         // New descriptions
@@ -203,7 +190,7 @@ enum CareerCategory: String, CaseIterable, Identifiable, Codable {
             return "Artist, musician, chef, designer, actor"
         case .sports:
             return "Athlete, coach, trainer, referee"
-        case .nature:
+        case .outdoors:
             return "Park ranger, gardener, marine biologist"
 
         // New examples
@@ -243,11 +230,11 @@ enum CareerCategory: String, CaseIterable, Identifiable, Codable {
     }
 }
 
-enum InterestPersona: String, CaseIterable, Identifiable, Codable {
+enum ByInterest: String, CaseIterable, Identifiable, Codable {
     case people = "Working with People"
     case tools = "Tools & Machines"
     case creative = "Creative & Arts"
-    case nature = "Nature & Outdoors"
+    case outdoors = "Land & Outdoors"
     case sports = "Sports & Fitness"
     case science = "Science & Health"
 
@@ -258,7 +245,7 @@ enum InterestPersona: String, CaseIterable, Identifiable, Codable {
         case .people: return "🤝"
         case .tools: return "🛠️"
         case .creative: return "🎨"
-        case .nature: return "🌿"
+        case .outdoors: return "🌿"
         case .sports: return "🏅"
         case .science: return "🔬"
         }
@@ -269,15 +256,15 @@ enum InterestPersona: String, CaseIterable, Identifiable, Codable {
         case .people: return "People"
         case .tools: return "Tools"
         case .creative: return "Creative"
-        case .nature: return "Nature"
+        case .outdoors: return "Outdoors"
         case .sports: return "Sports"
         case .science: return "Science"
         }
     }
 }
 
-struct Career: Identifiable, Hashable, Decodable {
-    let id: String
+public struct Career: Identifiable, Hashable, Decodable {
+    public let id: String
     var category: CareerCategory
     // 0..5 education requirement scale
     var difficulty: Int
@@ -310,13 +297,13 @@ struct Career: Identifiable, Hashable, Decodable {
         self.reward = reward
     }
     
-    var persona: InterestPersona { category.persona }
+    var persona: ByInterest { category.persona }
     
     private enum CodingKeys: String, CodingKey {
         case id, category, difficulty, chances, income, summary, icon, reward
     }
 
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
         self.id = try container.decode(String.self, forKey: .id)
@@ -341,10 +328,10 @@ struct Career: Identifiable, Hashable, Decodable {
 
     static func deriveReward(from income: Int) -> String {
         switch income {
-        case ...60000: return "💵"
-        case 60001...80000: return "💵💵"
-        case 80001...100000: return "💵💵💵"
-        default: return "💵💵💵💵"
+            case ...60000: return "💵"
+            case 60001...80000: return "💵💵"
+            case 80001...100000: return "💵💵💵"
+            default: return "💵💵💵💵"
         }
     }
 }
