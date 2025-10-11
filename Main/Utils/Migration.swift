@@ -16,7 +16,7 @@ enum MigrationError: Error {
     case writeFailed(Error)
 }
 
-struct MigrationUtils {
+public struct MigrationUtils {
 
     // Loads [Career] from the bundle file "careersData.json",
     // migrates to [CareerV2], and writes "careerV2.json" to Documents directory.
@@ -40,10 +40,10 @@ struct MigrationUtils {
         }
 
         // 3) Decode as [Career]
-        let careers: [Career]
+        let careers: [CareerV1]
         do {
             let decoder = JSONDecoder()
-            careers = try decoder.decode([Career].self, from: inputData)
+            careers = try decoder.decode([CareerV1].self, from: inputData)
         } catch {
             throw MigrationError.decodeFailed(error)
         }

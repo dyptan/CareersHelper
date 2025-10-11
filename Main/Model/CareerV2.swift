@@ -1,5 +1,6 @@
 import Foundation
 
+
 struct CareerV2: Identifiable, Codable, Hashable {
     let id: String
     let title: String
@@ -26,7 +27,7 @@ struct CareerV2: Identifiable, Codable, Hashable {
         case distinguishedAchievements = "Distinguished achievements"
     }
 
-    init(from career: Career) {
+    init(from career: CareerV1) {
         self.id = career.id
         self.title = career.id
         self.category = career.category.rawValue

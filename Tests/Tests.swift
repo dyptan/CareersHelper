@@ -7,11 +7,11 @@
 //
 
 import Testing
-
+@testable import CareersApp
 struct Tests {
 
     @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+        var t = try MigrationUtils.migrateCareersToV2()
     }
 
 }

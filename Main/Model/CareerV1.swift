@@ -8,7 +8,7 @@ enum CareerCategory: String, CaseIterable, Identifiable, Codable {
     case health = "Health"
     case technology = "Technology"
     case education = "Education"
-    case outdoors = "Outdoors"
+    case outdoors = "Nature"
     case design = "Design"
     case language = "Language"
     case media = "Media"
@@ -263,8 +263,8 @@ enum ByInterest: String, CaseIterable, Identifiable, Codable {
     }
 }
 
-public struct Career: Identifiable, Hashable, Decodable {
-    public let id: String
+struct CareerV1: Identifiable, Hashable, Decodable {
+    let id: String
     var category: CareerCategory
     // 0..5 education requirement scale
     var difficulty: Int
@@ -303,7 +303,7 @@ public struct Career: Identifiable, Hashable, Decodable {
         case id, category, difficulty, chances, income, summary, icon, reward
     }
 
-    public init(from decoder: Decoder) throws {
+    init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
         self.id = try container.decode(String.self, forKey: .id)
@@ -322,7 +322,7 @@ public struct Career: Identifiable, Hashable, Decodable {
         if let reward = try container.decodeIfPresent(String.self, forKey: .reward) {
             self.reward = reward
         } else {
-            self.reward = Career.deriveReward(from: self.income)
+            self.reward = CareerV1.deriveReward(from: self.income)
         }
     }
 

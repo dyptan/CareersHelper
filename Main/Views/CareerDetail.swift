@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CareerDetail: View {
-    var career: Career
+    var career: CareerV1
 
     var body: some View {
         ScrollView {

@@ -14,7 +14,7 @@ struct CareerList: View {
         careersAll.filter { $0.persona == persona }.map { $0.category }
     }
 
-    private func careerRows(careers: [Career]) -> some View {
+    private func careerRows(careers: [CareerV1]) -> some View {
         List {
             ForEach(careers) { career in
                 NavigationLink {
@@ -29,7 +29,7 @@ struct CareerList: View {
     private func categoryRows(categories: [CareerCategory]) -> some View {
         List {
             ForEach(groupedCategories(categories)) { category in
-                let filtered: [Career] = careersAll.filter {
+                let filtered = careersAll.filter {
                     $0.category == category
                 }
 
