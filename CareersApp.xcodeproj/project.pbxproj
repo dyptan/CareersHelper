@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5596D8332E9AED0D00E98CEF /* Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5596D8192E9AE25E00E98CEF /* Migration.swift */; };
 		5596D8732E9AF67D00E98CEF /* CareerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5596D81B2E9AE4EF00E98CEF /* CareerV2.swift */; };
+		5596D8792E9AFD3700E98CEF /* careerV2.json in Resources */ = {isa = PBXBuildFile; fileRef = 5596D8782E9AFD3700E98CEF /* careerV2.json */; };
 		55A6ECFF2E9541FD0033B674 /* CareerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6ECFE2E9541FD0033B674 /* CareerRow.swift */; };
 		55A6ED012E9542000033B674 /* CareerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6ED002E9542000033B674 /* CareerDetail.swift */; };
 		55A6ED032E9542020033B674 /* CareerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6ED022E9542020033B674 /* CareerList.swift */; };
@@ -30,13 +31,6 @@
 			remoteGlobalIDString = C20D77E924B665D7002E7AEA;
 			remoteInfo = CareersApp;
 		};
-		55C06F512E96A0D300BD5017 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C20D77E224B665D7002E7AEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C20D77E924B665D7002E7AEA;
-			remoteInfo = Careers;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,16 +47,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		32C0591524A7452A1B7C1DE3 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5596D8192E9AE25E00E98CEF /* Migration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migration.swift; sourceTree = "<group>"; };
 		5596D81B2E9AE4EF00E98CEF /* CareerV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerV2.swift; sourceTree = "<group>"; };
 		5596D86A2E9AF46B00E98CEF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5596D8782E9AFD3700E98CEF /* careerV2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = careerV2.json; sourceTree = "<group>"; };
 		55A6ECFE2E9541FD0033B674 /* CareerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerRow.swift; sourceTree = "<group>"; };
 		55A6ED002E9542000033B674 /* CareerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerDetail.swift; sourceTree = "<group>"; };
 		55A6ED022E9542020033B674 /* CareerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerList.swift; sourceTree = "<group>"; };
 		55A6ED042E9542630033B674 /* CareersModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareersModelData.swift; sourceTree = "<group>"; };
 		55A6ED062E9548000033B674 /* careersData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = careersData.json; sourceTree = "<group>"; };
-		55C06F4B2E96A0D300BD5017 /* CareersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C06F5D2E96DEB600BD5017 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		55C06F5F2E96E14A00BD5017 /* PersonaRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaRow.swift; sourceTree = "<group>"; };
 		C20D77EA24B665D7002E7AEA /* CareersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,32 +66,13 @@
 		FB75835CADF255844DAD0DAD /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		5596D8182E9AB23900E98CEF /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			platformFiltersByRelativePath = {
-				CareersTestsUI.swift = (
-					ios,
-				);
-			};
-			target = 55C06F4A2E96A0D300BD5017 /* CareersUITests */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5596D86B2E9AF46B00E98CEF /* Tests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Tests; sourceTree = "<group>"; };
-		55C06F4C2E96A0D300BD5017 /* CareersUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (5596D8182E9AB23900E98CEF /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = CareersUITests; sourceTree = "<group>"; };
+		55C06F4C2E96A0D300BD5017 /* CareersUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CareersUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5596D8672E9AF46B00E98CEF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		55C06F482E96A0D300BD5017 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,27 +97,12 @@
 			name = Configuration;
 			sourceTree = "<group>";
 		};
-		210CBA1CD0F2559FBC78D82D /* LICENSE */ = {
-			isa = PBXGroup;
-			children = (
-				32C0591524A7452A1B7C1DE3 /* LICENSE.txt */,
-			);
-			path = LICENSE;
-			sourceTree = "<group>";
-		};
 		5596D82E2E9AE72200E98CEF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				5596D8192E9AE25E00E98CEF /* Migration.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		5596D8442E9AF0E100E98CEF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C20D77E124B665D7002E7AEA = {
@@ -154,8 +113,6 @@
 				5596D86B2E9AF46B00E98CEF /* Tests */,
 				C20D77EB24B665D7002E7AEA /* Products */,
 				0BA6BB22EC06EFBEA60A948C /* Configuration */,
-				210CBA1CD0F2559FBC78D82D /* LICENSE */,
-				5596D8442E9AF0E100E98CEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				C20D77EA24B665D7002E7AEA /* CareersApp.app */,
-				55C06F4B2E96A0D300BD5017 /* CareersUITests.xctest */,
 				5596D86A2E9AF46B00E98CEF /* Tests.xctest */,
 			);
 			name = Products;
@@ -203,6 +159,7 @@
 		C20D780924B685CB002E7AEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5596D8782E9AFD3700E98CEF /* careerV2.json */,
 				55A6ED062E9548000033B674 /* careersData.json */,
 			);
 			path = Resources;
@@ -247,29 +204,6 @@
 			productReference = 5596D86A2E9AF46B00E98CEF /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		55C06F4A2E96A0D300BD5017 /* CareersUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 55C06F532E96A0D300BD5017 /* Build configuration list for PBXNativeTarget "CareersUITests" */;
-			buildPhases = (
-				55C06F472E96A0D300BD5017 /* Sources */,
-				55C06F482E96A0D300BD5017 /* Frameworks */,
-				55C06F492E96A0D300BD5017 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				55C06F522E96A0D300BD5017 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				55C06F4C2E96A0D300BD5017 /* CareersUITests */,
-			);
-			name = CareersUITests;
-			packageProductDependencies = (
-			);
-			productName = CareersUITests;
-			productReference = 55C06F4B2E96A0D300BD5017 /* CareersUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		C20D77E924B665D7002E7AEA /* CareersApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C20D77F924B665D8002E7AEA /* Build configuration list for PBXNativeTarget "CareersApp" */;
@@ -303,10 +237,6 @@
 						CreatedOnToolsVersion = 26.0.1;
 						TestTargetID = C20D77E924B665D7002E7AEA;
 					};
-					55C06F4A2E96A0D300BD5017 = {
-						CreatedOnToolsVersion = 26.0.1;
-						TestTargetID = C20D77E924B665D7002E7AEA;
-					};
 					C20D77E924B665D7002E7AEA = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -326,7 +256,6 @@
 			projectRoot = "";
 			targets = (
 				C20D77E924B665D7002E7AEA /* CareersApp */,
-				55C06F4A2E96A0D300BD5017 /* CareersUITests */,
 				5596D8692E9AF46B00E98CEF /* Tests */,
 			);
 		};
@@ -340,13 +269,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55C06F492E96A0D300BD5017 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C20D77E824B665D7002E7AEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,6 +276,7 @@
 				C20D77F524B665D8002E7AEA /* Preview Assets.xcassets in Resources */,
 				C20D77F224B665D8002E7AEA /* Assets.xcassets in Resources */,
 				55A6ED072E9548000033B674 /* careersData.json in Resources */,
+				5596D8792E9AFD3700E98CEF /* careerV2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,13 +284,6 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		5596D8662E9AF46B00E98CEF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		55C06F472E96A0D300BD5017 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,11 +314,6 @@
 			isa = PBXTargetDependency;
 			target = C20D77E924B665D7002E7AEA /* CareersApp */;
 			targetProxy = 5596D86E2E9AF46B00E98CEF /* PBXContainerItemProxy */;
-		};
-		55C06F522E96A0D300BD5017 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C20D77E924B665D7002E7AEA /* CareersApp */;
-			targetProxy = 55C06F512E96A0D300BD5017 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -468,75 +379,11 @@
 			};
 			name = Release;
 		};
-		55C06F542E96A0D300BD5017 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MU8Q7GLNNL;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dyptan.CareersUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Careers;
-				XROS_DEPLOYMENT_TARGET = 26.0;
-			};
-			name = Debug;
-		};
-		55C06F552E96A0D300BD5017 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MU8Q7GLNNL;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dyptan.CareersUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Careers;
-				XROS_DEPLOYMENT_TARGET = 26.0;
-			};
-			name = Release;
-		};
 		C20D77F724B665D8002E7AEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB75835CADF255844DAD0DAD /* SampleCode.xcconfig */;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -589,9 +436,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -601,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB75835CADF255844DAD0DAD /* SampleCode.xcconfig */;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -649,6 +499,8 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -661,12 +513,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Main/Preview Content\"";
 				DEVELOPMENT_TEAM = MU8Q7GLNNL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CareerHelper;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -697,12 +552,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Main/Preview Content\"";
 				DEVELOPMENT_TEAM = MU8Q7GLNNL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CareerHelper;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -735,15 +593,6 @@
 			buildConfigurations = (
 				5596D8712E9AF46B00E98CEF /* Debug */,
 				5596D8722E9AF46B00E98CEF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		55C06F532E96A0D300BD5017 /* Build configuration list for PBXNativeTarget "CareersUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				55C06F542E96A0D300BD5017 /* Debug */,
-				55C06F552E96A0D300BD5017 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

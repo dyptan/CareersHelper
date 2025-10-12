@@ -1,0 +1,2897 @@
+[
+  {
+    "category" : "Technology",
+    "icon" : "💻",
+    "id" : "Software Developer",
+    "income" : 85000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Developers write code to build apps and systems.",
+    "title" : "Software Developer",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "📊",
+    "id" : "Data Scientist",
+    "income" : 95000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Data scientists analyze data to build models and insights.",
+    "title" : "Data Scientist",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🤖",
+    "id" : "Machine Learning Engineer",
+    "income" : 105000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "ML engineers deploy and optimize learning systems.",
+    "title" : "Machine Learning Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "☁️",
+    "id" : "Cloud Architect",
+    "income" : 110000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Designs scalable cloud systems and infrastructure.",
+    "title" : "Cloud Architect",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🛡️",
+    "id" : "Cybersecurity Analyst",
+    "income" : 90000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Protects systems and data from threats.",
+    "title" : "Cybersecurity Analyst",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "⚙️",
+    "id" : "DevOps Engineer",
+    "income" : 95000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Automates build, test, and deployment pipelines.",
+    "title" : "DevOps Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "📱",
+    "id" : "Mobile App Developer",
+    "income" : 85000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Builds apps for phones and tablets.",
+    "title" : "Mobile App Developer",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🧩",
+    "id" : "Frontend Developer",
+    "income" : 80000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Implements UI and web experiences.",
+    "title" : "Frontend Developer",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🗄️",
+    "id" : "Backend Developer",
+    "income" : 90000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Builds APIs, services, and databases.",
+    "title" : "Backend Developer",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🧰",
+    "id" : "Full-Stack Developer",
+    "income" : 90000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Works across frontend and backend systems.",
+    "title" : "Full-Stack Developer",
+    "version" : 2
+  },
+  {
+    "category" : "Design",
+    "icon" : "🎨",
+    "id" : "UI/UX Designer",
+    "income" : 70000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Designs interfaces and user experiences.",
+    "title" : "UI/UX Designer",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🧭",
+    "id" : "Product Manager",
+    "income" : 95000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Defines product vision and roadmap.",
+    "title" : "Product Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "📅",
+    "id" : "Project Manager",
+    "income" : 80000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Plans and delivers projects on time and budget.",
+    "title" : "Project Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🏉",
+    "id" : "Scrum Master",
+    "income" : 75000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Facilitates agile teams and ceremonies.",
+    "title" : "Scrum Master",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "✅",
+    "id" : "QA Engineer",
+    "income" : 70000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Ensures software quality via tests and tooling.",
+    "title" : "QA Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "📈",
+    "id" : "Site Reliability Engineer",
+    "income" : 105000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Keeps services reliable and scalable.",
+    "title" : "Site Reliability Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🖥️",
+    "id" : "Systems Administrator",
+    "income" : 70000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Maintains servers, networks, and systems.",
+    "title" : "Systems Administrator",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🌐",
+    "id" : "Network Engineer",
+    "income" : 85000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Designs and maintains network infrastructure.",
+    "title" : "Network Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "💽",
+    "id" : "Database Administrator",
+    "income" : 90000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Manages databases for performance and security.",
+    "title" : "Database Administrator",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🎮",
+    "id" : "Game Developer",
+    "income" : 80000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 4
+    },
+    "reward" : "💵💵",
+    "summary" : "Creates games across platforms and engines.",
+    "title" : "Game Developer",
+    "version" : 2
+  },
+  {
+    "category" : "Engineering",
+    "icon" : "🛠️",
+    "id" : "Engineer",
+    "income" : 80000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Engineers design and build systems and products.",
+    "title" : "Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Engineering",
+    "icon" : "⚙️",
+    "id" : "Mechanical Engineer",
+    "income" : 85000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Designs mechanical systems and machines.",
+    "title" : "Mechanical Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Engineering",
+    "icon" : "🔌",
+    "id" : "Electrical Engineer",
+    "income" : 90000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Works on power, electronics, and circuits.",
+    "title" : "Electrical Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Engineering",
+    "icon" : "🏗️",
+    "id" : "Civil Engineer",
+    "income" : 80000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Designs infrastructure like roads and bridges.",
+    "title" : "Civil Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Engineering",
+    "icon" : "🧪",
+    "id" : "Chemical Engineer",
+    "income" : 95000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Develops processes for chemicals and materials.",
+    "title" : "Chemical Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Engineering",
+    "icon" : "🏭",
+    "id" : "Industrial Engineer",
+    "income" : 85000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Optimizes systems for efficiency and quality.",
+    "title" : "Industrial Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Engineering",
+    "icon" : "✈️",
+    "id" : "Aerospace Engineer",
+    "income" : 100000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Designs aircraft and spacecraft systems.",
+    "title" : "Aerospace Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Engineering",
+    "icon" : "🧬",
+    "id" : "Biomedical Engineer",
+    "income" : 90000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Builds medical devices and health technologies.",
+    "title" : "Biomedical Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Engineering",
+    "icon" : "🌱",
+    "id" : "Environmental Engineer",
+    "income" : 80000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Solves environmental challenges with engineering.",
+    "title" : "Environmental Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Design",
+    "icon" : "📐",
+    "id" : "Architect",
+    "income" : 85000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Designs buildings and spaces.",
+    "title" : "Architect",
+    "version" : 2
+  },
+  {
+    "category" : "Design",
+    "icon" : "🛋️",
+    "id" : "Interior Designer",
+    "income" : 65000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Designs interior spaces for function and style.",
+    "title" : "Interior Designer",
+    "version" : 2
+  },
+  {
+    "category" : "Design",
+    "icon" : "🖌️",
+    "id" : "Graphic Designer",
+    "income" : 60000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Creates visual communication and branding.",
+    "title" : "Graphic Designer",
+    "version" : 2
+  },
+  {
+    "category" : "Design",
+    "icon" : "📦",
+    "id" : "Industrial Designer",
+    "income" : 75000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Designs products for usability and manufacturing.",
+    "title" : "Industrial Designer",
+    "version" : 2
+  },
+  {
+    "category" : "Arts",
+    "icon" : "🎨",
+    "id" : "Artist",
+    "income" : 50000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Basic language only",
+      "luck" : 5
+    },
+    "reward" : "💵",
+    "summary" : "Creates art across mediums; portfolio matters.",
+    "title" : "Artist",
+    "version" : 2
+  },
+  {
+    "category" : "Arts",
+    "icon" : "🎵",
+    "id" : "Musician",
+    "income" : 50000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 5
+    },
+    "reward" : "💵",
+    "summary" : "Performs and composes music; gigs and networks help.",
+    "title" : "Musician",
+    "version" : 2
+  },
+  {
+    "category" : "Arts",
+    "icon" : "🎭",
+    "id" : "Actor",
+    "income" : 55000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 5
+    },
+    "reward" : "💵",
+    "summary" : "Performs in film, TV, and theater; auditions matter.",
+    "title" : "Actor",
+    "version" : 2
+  },
+  {
+    "category" : "Arts",
+    "icon" : "📷",
+    "id" : "Photographer",
+    "income" : 50000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Captures images for media, events, and brands.",
+    "title" : "Photographer",
+    "version" : 2
+  },
+  {
+    "category" : "Arts",
+    "icon" : "🧑‍🍳",
+    "id" : "Chef",
+    "income" : 55000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Creates menus and leads kitchens.",
+    "title" : "Chef",
+    "version" : 2
+  },
+  {
+    "category" : "Arts",
+    "icon" : "🍞",
+    "id" : "Baker",
+    "income" : 45000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Bakes breads, pastries, and desserts.",
+    "title" : "Baker",
+    "version" : 2
+  },
+  {
+    "category" : "Education",
+    "icon" : "👩‍🏫",
+    "id" : "Teacher",
+    "income" : 60000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Educates students and develops curricula.",
+    "title" : "Teacher",
+    "version" : 2
+  },
+  {
+    "category" : "Education",
+    "icon" : "🎓",
+    "id" : "Professor",
+    "income" : 80000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Distinguished achievements",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Teaches and conducts research at universities.",
+    "title" : "Professor",
+    "version" : 2
+  },
+  {
+    "category" : "Education",
+    "icon" : "🧑‍🏫",
+    "id" : "School Counselor",
+    "income" : 60000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Supports students’ academic and personal growth.",
+    "title" : "School Counselor",
+    "version" : 2
+  },
+  {
+    "category" : "Education",
+    "icon" : "📚",
+    "id" : "Instructional Designer",
+    "income" : 70000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Designs learning experiences and materials.",
+    "title" : "Instructional Designer",
+    "version" : 2
+  },
+  {
+    "category" : "Health",
+    "icon" : "🩺",
+    "id" : "Nurse",
+    "income" : 65000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 1
+    },
+    "reward" : "💵💵",
+    "summary" : "Provides patient care and coordinates treatment.",
+    "title" : "Nurse",
+    "version" : 2
+  },
+  {
+    "category" : "Health",
+    "icon" : "🩺",
+    "id" : "Doctor",
+    "income" : 120000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Distinguished achievements",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Diagnoses and treats illnesses and injuries.",
+    "title" : "Doctor",
+    "version" : 2
+  },
+  {
+    "category" : "Health",
+    "icon" : "🔪",
+    "id" : "Surgeon",
+    "income" : 160000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Distinguished achievements",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Performs surgical operations; long training.",
+    "title" : "Surgeon",
+    "version" : 2
+  },
+  {
+    "category" : "Health",
+    "icon" : "🦷",
+    "id" : "Dentist",
+    "income" : 110000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Distinguished achievements",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Treats oral health and dental procedures.",
+    "title" : "Dentist",
+    "version" : 2
+  },
+  {
+    "category" : "Health",
+    "icon" : "💊",
+    "id" : "Pharmacist",
+    "income" : 90000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Dispenses medications and advises on use.",
+    "title" : "Pharmacist",
+    "version" : 2
+  },
+  {
+    "category" : "Health",
+    "icon" : "🧎",
+    "id" : "Physiotherapist",
+    "income" : 65000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Helps patients recover movement and function.",
+    "title" : "Physiotherapist",
+    "version" : 2
+  },
+  {
+    "category" : "Health",
+    "icon" : "🧠",
+    "id" : "Psychologist",
+    "income" : 80000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Assesses and supports mental health.",
+    "title" : "Psychologist",
+    "version" : 2
+  },
+  {
+    "category" : "Health",
+    "icon" : "🚑",
+    "id" : "Paramedic",
+    "income" : 60000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Provides emergency medical care.",
+    "title" : "Paramedic",
+    "version" : 2
+  },
+  {
+    "category" : "Health",
+    "icon" : "🐾",
+    "id" : "Veterinarian",
+    "income" : 80000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Distinguished achievements",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Treats animal health and surgery.",
+    "title" : "Veterinarian",
+    "version" : 2
+  },
+  {
+    "category" : "Health",
+    "icon" : "🏥",
+    "id" : "Public Health Specialist",
+    "income" : 70000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Improves population health and policy.",
+    "title" : "Public Health Specialist",
+    "version" : 2
+  },
+  {
+    "category" : "Law",
+    "icon" : "⚖️",
+    "id" : "Lawyer",
+    "income" : 110000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Advises and represents clients in legal matters.",
+    "title" : "Lawyer",
+    "version" : 2
+  },
+  {
+    "category" : "Law",
+    "icon" : "🔨",
+    "id" : "Judge",
+    "income" : 120000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Distinguished achievements",
+      "luck" : 5
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Presides over legal proceedings.",
+    "title" : "Judge",
+    "version" : 2
+  },
+  {
+    "category" : "Law",
+    "icon" : "📄",
+    "id" : "Paralegal",
+    "income" : 60000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Supports legal research and documentation.",
+    "title" : "Paralegal",
+    "version" : 2
+  },
+  {
+    "category" : "Law",
+    "icon" : "🧾",
+    "id" : "Compliance Officer",
+    "income" : 80000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Ensures adherence to laws and standards.",
+    "title" : "Compliance Officer",
+    "version" : 2
+  },
+  {
+    "category" : "Public Services",
+    "icon" : "👮",
+    "id" : "Police Officer",
+    "income" : 65000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵💵",
+    "summary" : "Maintains public safety and law enforcement.",
+    "title" : "Police Officer",
+    "version" : 2
+  },
+  {
+    "category" : "Public Services",
+    "icon" : "🚒",
+    "id" : "Firefighter",
+    "income" : 65000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵💵",
+    "summary" : "Responds to fires and emergencies.",
+    "title" : "Firefighter",
+    "version" : 2
+  },
+  {
+    "category" : "Public Services",
+    "icon" : "🛂",
+    "id" : "Customs Officer",
+    "income" : 65000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Monitors border and trade compliance.",
+    "title" : "Customs Officer",
+    "version" : 2
+  },
+  {
+    "category" : "Public Services",
+    "icon" : "🤝",
+    "id" : "Social Worker",
+    "income" : 55000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Supports individuals and families in need.",
+    "title" : "Social Worker",
+    "version" : 2
+  },
+  {
+    "category" : "Public Services",
+    "icon" : "🏛️",
+    "id" : "Diplomat",
+    "income" : 90000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 4
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Represents national interests abroad.",
+    "title" : "Diplomat",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "📈",
+    "id" : "Economist",
+    "income" : 90000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Analyzes markets and economic policy.",
+    "title" : "Economist",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🧮",
+    "id" : "Accountant",
+    "income" : 70000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Manages financial records and reporting.",
+    "title" : "Accountant",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🔍",
+    "id" : "Auditor",
+    "income" : 80000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Examines financial statements for accuracy.",
+    "title" : "Auditor",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "💹",
+    "id" : "Financial Analyst",
+    "income" : 85000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Evaluates investments and performance.",
+    "title" : "Financial Analyst",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🏦",
+    "id" : "Investment Banker",
+    "income" : 130000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 5
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Advises on deals and capital markets.",
+    "title" : "Investment Banker",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🧠",
+    "id" : "Management Consultant",
+    "income" : 110000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 4
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Improves business performance and strategy.",
+    "title" : "Management Consultant",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🧑‍💼",
+    "id" : "HR Manager",
+    "income" : 80000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Leads hiring, development, and policies.",
+    "title" : "HR Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "📣",
+    "id" : "Recruiter",
+    "income" : 65000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Finds and places talent in roles.",
+    "title" : "Recruiter",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "📢",
+    "id" : "Marketing Manager",
+    "income" : 90000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Leads campaigns and brand growth.",
+    "title" : "Marketing Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🌐",
+    "id" : "Digital Marketer",
+    "income" : 70000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Runs online channels and analytics.",
+    "title" : "Digital Marketer",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "💼",
+    "id" : "Sales Manager",
+    "income" : 90000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Drives revenue and leads teams.",
+    "title" : "Sales Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🤝",
+    "id" : "Account Manager",
+    "income" : 75000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Manages client relationships and growth.",
+    "title" : "Account Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🚚",
+    "id" : "Operations Manager",
+    "income" : 90000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Optimizes processes and delivery.",
+    "title" : "Operations Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "📦",
+    "id" : "Supply Chain Manager",
+    "income" : 95000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Oversees logistics and sourcing.",
+    "title" : "Supply Chain Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Design",
+    "icon" : "🧪",
+    "id" : "Product Designer",
+    "income" : 80000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Designs products from concept to launch.",
+    "title" : "Product Designer",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "✍️",
+    "id" : "Copywriter",
+    "income" : 60000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Writes marketing and advertising content.",
+    "title" : "Copywriter",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "📰",
+    "id" : "Journalist",
+    "income" : 60000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Reports news and investigates stories.",
+    "title" : "Journalist",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "✂️",
+    "id" : "Editor",
+    "income" : 65000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Edits and curates written content.",
+    "title" : "Editor",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "🎬",
+    "id" : "Video Producer",
+    "income" : 70000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Produces video content from script to screen.",
+    "title" : "Video Producer",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "🧿",
+    "id" : "Animator",
+    "income" : 70000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Creates animation for media and games.",
+    "title" : "Animator",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "🎚️",
+    "id" : "Sound Engineer",
+    "income" : 65000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Records and mixes audio for productions.",
+    "title" : "Sound Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Design",
+    "icon" : "🔬",
+    "id" : "UX Researcher",
+    "income" : 80000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Studies users to inform design decisions.",
+    "title" : "UX Researcher",
+    "version" : 2
+  },
+  {
+    "category" : "Language",
+    "icon" : "🌍",
+    "id" : "Translator",
+    "income" : 55000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Converts written content between languages.",
+    "title" : "Translator",
+    "version" : 2
+  },
+  {
+    "category" : "Language",
+    "icon" : "🗣️",
+    "id" : "Interpreter",
+    "income" : 60000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Translates speech in real time.",
+    "title" : "Interpreter",
+    "version" : 2
+  },
+  {
+    "category" : "Tourism",
+    "icon" : "🗺️",
+    "id" : "Tour Guide",
+    "income" : 45000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Leads and informs visitors at attractions.",
+    "title" : "Tour Guide",
+    "version" : 2
+  },
+  {
+    "category" : "Tourism",
+    "icon" : "🏨",
+    "id" : "Hotel Manager",
+    "income" : 70000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Oversees hotel operations and service.",
+    "title" : "Hotel Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🎉",
+    "id" : "Event Manager",
+    "income" : 65000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Plans and runs events and conferences.",
+    "title" : "Event Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🏡",
+    "id" : "Real Estate Agent",
+    "income" : 70000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Helps clients buy and sell property.",
+    "title" : "Real Estate Agent",
+    "version" : 2
+  },
+  {
+    "category" : "Construction",
+    "icon" : "🚧",
+    "id" : "Construction Manager",
+    "income" : 90000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Leads building projects and teams.",
+    "title" : "Construction Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Construction",
+    "icon" : "🪚",
+    "id" : "Carpenter",
+    "income" : 55000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Builds and installs wooden structures.",
+    "title" : "Carpenter",
+    "version" : 2
+  },
+  {
+    "category" : "Construction",
+    "icon" : "💡",
+    "id" : "Electrician",
+    "income" : 60000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Installs and maintains electrical systems.",
+    "title" : "Electrician",
+    "version" : 2
+  },
+  {
+    "category" : "Construction",
+    "icon" : "🚰",
+    "id" : "Plumber",
+    "income" : 60000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Installs and repairs water systems.",
+    "title" : "Plumber",
+    "version" : 2
+  },
+  {
+    "category" : "Construction",
+    "icon" : "🔧",
+    "id" : "Welder",
+    "income" : 55000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Joins metal parts using welding processes.",
+    "title" : "Welder",
+    "version" : 2
+  },
+  {
+    "category" : "Automotive",
+    "icon" : "🚗",
+    "id" : "Mechanic",
+    "income" : 55000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Repairs and maintains vehicles.",
+    "title" : "Mechanic",
+    "version" : 2
+  },
+  {
+    "category" : "Automotive",
+    "icon" : "🚘",
+    "id" : "Automotive Engineer",
+    "income" : 90000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Designs vehicle systems and components.",
+    "title" : "Automotive Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Aviation",
+    "icon" : "🛫",
+    "id" : "Aviation Pilot",
+    "income" : 120000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Distinguished achievements",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Flies aircraft for airlines or cargo.",
+    "title" : "Aviation Pilot",
+    "version" : 2
+  },
+  {
+    "category" : "Aviation",
+    "icon" : "🛰️",
+    "id" : "Air Traffic Controller",
+    "income" : 105000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Manages aircraft movement safely.",
+    "title" : "Air Traffic Controller",
+    "version" : 2
+  },
+  {
+    "category" : "Aviation",
+    "icon" : "🧳",
+    "id" : "Flight Attendant",
+    "income" : 60000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Ensures passenger safety and service.",
+    "title" : "Flight Attendant",
+    "version" : 2
+  },
+  {
+    "category" : "Maritime",
+    "icon" : "⚓️",
+    "id" : "Marine Engineer",
+    "income" : 95000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Designs and maintains ship systems.",
+    "title" : "Marine Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Logistics",
+    "icon" : "📦",
+    "id" : "Logistics Coordinator",
+    "income" : 60000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Schedules and tracks shipments.",
+    "title" : "Logistics Coordinator",
+    "version" : 2
+  },
+  {
+    "category" : "Logistics",
+    "icon" : "🏬",
+    "id" : "Warehouse Manager",
+    "income" : 60000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Oversees storage and distribution.",
+    "title" : "Warehouse Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Retail",
+    "icon" : "🛍️",
+    "id" : "Retail Store Manager",
+    "income" : 55000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Leads store operations and teams.",
+    "title" : "Retail Store Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Retail",
+    "icon" : "🧾",
+    "id" : "Buyer/Merchandiser",
+    "income" : 60000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Selects and manages product assortments.",
+    "title" : "Buyer/Merchandiser",
+    "version" : 2
+  },
+  {
+    "category" : "Fashion",
+    "icon" : "👗",
+    "id" : "Fashion Designer",
+    "income" : 65000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 4
+    },
+    "reward" : "💵💵",
+    "summary" : "Designs clothing and accessories.",
+    "title" : "Fashion Designer",
+    "version" : 2
+  },
+  {
+    "category" : "Science",
+    "icon" : "🧫",
+    "id" : "Biologist",
+    "income" : 70000,
+    "persona" : "Science",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Studies living organisms and systems.",
+    "title" : "Biologist",
+    "version" : 2
+  },
+  {
+    "category" : "Science",
+    "icon" : "⚗️",
+    "id" : "Chemist",
+    "income" : 70000,
+    "persona" : "Science",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Researches chemicals and materials.",
+    "title" : "Chemist",
+    "version" : 2
+  },
+  {
+    "category" : "Science",
+    "icon" : "🪐",
+    "id" : "Physicist",
+    "income" : 90000,
+    "persona" : "Science",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Explores matter, energy, and the universe.",
+    "title" : "Physicist",
+    "version" : 2
+  },
+  {
+    "category" : "Science",
+    "icon" : "🔬",
+    "id" : "Lab Technician",
+    "income" : 55000,
+    "persona" : "Science",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Runs experiments and testing.",
+    "title" : "Lab Technician",
+    "version" : 2
+  },
+  {
+    "category" : "Science",
+    "icon" : "📚",
+    "id" : "Research Scientist",
+    "income" : 90000,
+    "persona" : "Science",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Conducts research and publishes findings.",
+    "title" : "Research Scientist",
+    "version" : 2
+  },
+  {
+    "category" : "Science",
+    "icon" : "🌿",
+    "id" : "Environmental Scientist",
+    "income" : 70000,
+    "persona" : "Science",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Studies environment and sustainability.",
+    "title" : "Environmental Scientist",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "🌲",
+    "id" : "Park Ranger",
+    "income" : 55000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Protects parks and educates visitors.",
+    "title" : "Park Ranger",
+    "version" : 2
+  },
+  {
+    "category" : "Public Services",
+    "icon" : "🏙️",
+    "id" : "Urban Planner",
+    "income" : 80000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Plans land use and city development.",
+    "title" : "Urban Planner",
+    "version" : 2
+  },
+  {
+    "category" : "Humanities",
+    "icon" : "🏺",
+    "id" : "Historian",
+    "income" : 60000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Researches and interprets history.",
+    "title" : "Historian",
+    "version" : 2
+  },
+  {
+    "category" : "Education",
+    "icon" : "📖",
+    "id" : "Librarian",
+    "income" : 55000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Curates information and supports learning.",
+    "title" : "Librarian",
+    "version" : 2
+  },
+  {
+    "category" : "Education",
+    "icon" : "🗄️",
+    "id" : "Archivist",
+    "income" : 55000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Preserves and organizes records.",
+    "title" : "Archivist",
+    "version" : 2
+  },
+  {
+    "category" : "Sports",
+    "icon" : "🏅",
+    "id" : "Athlete",
+    "income" : 60000,
+    "persona" : "Sports",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 5
+    },
+    "reward" : "💵",
+    "summary" : "Trains and competes in sports.",
+    "title" : "Athlete",
+    "version" : 2
+  },
+  {
+    "category" : "Sports",
+    "icon" : "🏆",
+    "id" : "Coach",
+    "income" : 60000,
+    "persona" : "Sports",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Guides athletes and teams.",
+    "title" : "Coach",
+    "version" : 2
+  },
+  {
+    "category" : "Sports",
+    "icon" : "💪",
+    "id" : "Fitness Trainer",
+    "income" : 55000,
+    "persona" : "Sports",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Leads workouts and personal training.",
+    "title" : "Fitness Trainer",
+    "version" : 2
+  },
+  {
+    "category" : "Health",
+    "icon" : "🥗",
+    "id" : "Dietitian",
+    "income" : 65000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Advises on nutrition and diets.",
+    "title" : "Dietitian",
+    "version" : 2
+  },
+  {
+    "category" : "Arts",
+    "icon" : "🍽️",
+    "id" : "Chef de Partie",
+    "income" : 52000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Runs a station in a professional kitchen.",
+    "title" : "Chef de Partie",
+    "version" : 2
+  },
+  {
+    "category" : "Hospitality",
+    "icon" : "🍸",
+    "id" : "Bartender",
+    "income" : 45000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Prepares and serves drinks.",
+    "title" : "Bartender",
+    "version" : 2
+  },
+  {
+    "category" : "Hospitality",
+    "icon" : "☕️",
+    "id" : "Barista",
+    "income" : 42000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Basic language only",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Crafts coffee beverages and serves guests.",
+    "title" : "Barista",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "💼",
+    "id" : "Pharmaceutical Sales",
+    "income" : 90000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Sells medical products to clinicians.",
+    "title" : "Pharmaceutical Sales",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🎧",
+    "id" : "Customer Support Specialist",
+    "income" : 50000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Helps customers resolve issues.",
+    "title" : "Customer Support Specialist",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "📝",
+    "id" : "Technical Writer",
+    "income" : 65000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Creates documentation and guides.",
+    "title" : "Technical Writer",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "🧭",
+    "id" : "Content Strategist",
+    "income" : 70000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Plans and governs content across channels.",
+    "title" : "Content Strategist",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "🔎",
+    "id" : "SEO Specialist",
+    "income" : 65000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Optimizes content for search engines.",
+    "title" : "SEO Specialist",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🛠️",
+    "id" : "Data Engineer",
+    "income" : 100000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Builds data pipelines and platforms.",
+    "title" : "Data Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "📊",
+    "id" : "Business Analyst",
+    "income" : 75000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Analyzes processes and requirements.",
+    "title" : "Business Analyst",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🎯",
+    "id" : "Product Owner",
+    "income" : 90000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Represents stakeholder needs in agile teams.",
+    "title" : "Product Owner",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🚀",
+    "id" : "Entrepreneur",
+    "income" : 80000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Basic language only",
+      "luck" : 5
+    },
+    "reward" : "💵💵",
+    "summary" : "Builds and grows new ventures.",
+    "title" : "Entrepreneur",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🌱",
+    "id" : "Startup Founder",
+    "income" : 90000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Basic language only",
+      "luck" : 5
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Leads early-stage company creation.",
+    "title" : "Startup Founder",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🧲",
+    "id" : "Product Marketing Manager",
+    "income" : 95000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Bridges product and go-to-market.",
+    "title" : "Product Marketing Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🏷️",
+    "id" : "Brand Manager",
+    "income" : 90000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 4
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Owns brand strategy and execution.",
+    "title" : "Brand Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "📣",
+    "id" : "PR Specialist",
+    "income" : 65000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Manages public relations and media.",
+    "title" : "PR Specialist",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "👥",
+    "id" : "Community Manager",
+    "income" : 60000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Engages and grows online communities.",
+    "title" : "Community Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🛠️",
+    "id" : "IT Support Specialist",
+    "income" : 55000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Solves user IT issues and setups.",
+    "title" : "IT Support Specialist",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🧑‍💻",
+    "id" : "IT Manager",
+    "income" : 95000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Leads IT operations and strategy.",
+    "title" : "IT Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🧮",
+    "id" : "Systems Analyst",
+    "income" : 85000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Analyzes and improves information systems.",
+    "title" : "Systems Analyst",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🕵️",
+    "id" : "Penetration Tester",
+    "income" : 95000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Tests security via ethical hacking.",
+    "title" : "Penetration Tester",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "⛓️",
+    "id" : "Blockchain Developer",
+    "income" : 100000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 4
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Builds decentralized apps and smart contracts.",
+    "title" : "Blockchain Developer",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🕶️",
+    "id" : "AR/VR Developer",
+    "income" : 95000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 4
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Creates augmented and virtual reality experiences.",
+    "title" : "AR/VR Developer",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "🚜",
+    "id" : "Farmer",
+    "income" : 55000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Grows crops or raises animals; seasonal and weather-dependent.",
+    "title" : "Farmer",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "🤠",
+    "id" : "Rancher",
+    "income" : 60000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Manages large herds and rangelands.",
+    "title" : "Rancher",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "🥛",
+    "id" : "Dairy Farmer",
+    "income" : 60000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Produces milk and cares for dairy herds.",
+    "title" : "Dairy Farmer",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "🐔",
+    "id" : "Poultry Farmer",
+    "income" : 52000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Raises chickens or other birds for eggs or meat.",
+    "title" : "Poultry Farmer",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "🐝",
+    "id" : "Beekeeper",
+    "income" : 48000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Maintains bee colonies for honey and pollination.",
+    "title" : "Beekeeper",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "🌼",
+    "id" : "Horticulturist",
+    "income" : 65000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Cultivates fruits, vegetables, and ornamental plants.",
+    "title" : "Horticulturist",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "🌾",
+    "id" : "Agronomist",
+    "income" : 70000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Advises on soil, crops, and farm productivity.",
+    "title" : "Agronomist",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "🍇",
+    "id" : "Viticulturist",
+    "income" : 65000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Grows grapes and manages vineyards.",
+    "title" : "Viticulturist",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "🐟",
+    "id" : "Aquaculture Farmer",
+    "income" : 60000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Farms fish and seafood in controlled environments.",
+    "title" : "Aquaculture Farmer",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "🏡",
+    "id" : "Greenhouse Manager",
+    "income" : 58000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Manages controlled environments for plant growth.",
+    "title" : "Greenhouse Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "🚿",
+    "id" : "Irrigation Specialist",
+    "income" : 56000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Designs and maintains farm water systems.",
+    "title" : "Irrigation Specialist",
+    "version" : 2
+  },
+  {
+    "category" : "Science",
+    "icon" : "🧪",
+    "id" : "Soil Scientist",
+    "income" : 70000,
+    "persona" : "Science",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Studies soil properties to improve agriculture.",
+    "title" : "Soil Scientist",
+    "version" : 2
+  },
+  {
+    "category" : "Engineering",
+    "icon" : "🚜",
+    "id" : "Agricultural Engineer",
+    "income" : 80000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 2
+    },
+    "reward" : "💵💵",
+    "summary" : "Designs farm machinery and systems.",
+    "title" : "Agricultural Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "🧪",
+    "id" : "Agricultural Technician",
+    "income" : 52000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵",
+    "summary" : "Supports farming operations and field research.",
+    "title" : "Agricultural Technician",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "📋",
+    "id" : "Farm Manager",
+    "income" : 65000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 1
+    },
+    "reward" : "💵💵",
+    "summary" : "Oversees farm staff, budgets, and production.",
+    "title" : "Farm Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "📱",
+    "id" : "Influencer",
+    "income" : 60000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Basic language only",
+      "luck" : 5
+    },
+    "reward" : "💵",
+    "summary" : "Creates social content and builds audiences.",
+    "title" : "Influencer",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "🎥",
+    "id" : "Streamer",
+    "income" : 55000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Basic language only",
+      "luck" : 5
+    },
+    "reward" : "💵",
+    "summary" : "Streams live content and engages communities.",
+    "title" : "Streamer",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "🎙️",
+    "id" : "Podcaster",
+    "income" : 55000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Basic language only",
+      "luck" : 4
+    },
+    "reward" : "💵",
+    "summary" : "Hosts and produces audio shows.",
+    "title" : "Podcaster",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "💬",
+    "id" : "Social Media Manager",
+    "income" : 65000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Plans and runs brand social channels.",
+    "title" : "Social Media Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "🛡️",
+    "id" : "Community Moderator",
+    "income" : 48000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "High school",
+      "luck" : 2
+    },
+    "reward" : "💵",
+    "summary" : "Moderates online communities and forums.",
+    "title" : "Community Moderator",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🛰️",
+    "id" : "Drone Pilot",
+    "income" : 60000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Operates drones for filming, mapping, and inspection.",
+    "title" : "Drone Pilot",
+    "version" : 2
+  },
+  {
+    "category" : "Sports",
+    "icon" : "🕹️",
+    "id" : "eSports Player",
+    "income" : 65000,
+    "persona" : "Sports",
+    "requirements" : {
+      "education" : "Basic language only",
+      "luck" : 5
+    },
+    "reward" : "💵💵",
+    "summary" : "Competes professionally in video games.",
+    "title" : "eSports Player",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🔒",
+    "id" : "Data Privacy Officer",
+    "income" : 95000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Ensures compliance with data protection laws.",
+    "title" : "Data Privacy Officer",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "📈",
+    "id" : "Growth Marketer",
+    "income" : 85000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 4
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Drives user and revenue growth through experiments.",
+    "title" : "Growth Marketer",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🤝",
+    "id" : "Developer Relations Advocate",
+    "income" : 90000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Builds relationships with developer communities.",
+    "title" : "Developer Relations Advocate",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🧩",
+    "id" : "No-Code Developer",
+    "income" : 70000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Builds apps with visual tools and automation.",
+    "title" : "No-Code Developer",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "💬",
+    "id" : "Prompt Engineer",
+    "income" : 100000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 4
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Designs prompts to guide AI systems.",
+    "title" : "Prompt Engineer",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "⚖️",
+    "id" : "AI Ethicist",
+    "income" : 100000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 4
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Develops ethical frameworks for AI.",
+    "title" : "AI Ethicist",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "🌍",
+    "id" : "Sustainability Manager",
+    "income" : 85000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 2
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Leads environmental and social initiatives.",
+    "title" : "Sustainability Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Science",
+    "icon" : "🌡️",
+    "id" : "Climate Analyst",
+    "income" : 80000,
+    "persona" : "Science",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Analyzes climate data and impacts.",
+    "title" : "Climate Analyst",
+    "version" : 2
+  },
+  {
+    "category" : "Business",
+    "icon" : "⚙️",
+    "id" : "Product Operations Manager",
+    "income" : 90000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Improves product delivery and team workflows.",
+    "title" : "Product Operations Manager",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "📰",
+    "id" : "Reporter",
+    "income" : 60000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Investigates and reports news stories.",
+    "title" : "Reporter",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "🔎",
+    "id" : "Investigative Reporter",
+    "income" : 70000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 4
+    },
+    "reward" : "💵💵",
+    "summary" : "Conducts in-depth reporting on complex topics.",
+    "title" : "Investigative Reporter",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "🎤",
+    "id" : "News Anchor",
+    "income" : 70000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 4
+    },
+    "reward" : "💵💵",
+    "summary" : "Presents news on TV or radio.",
+    "title" : "News Anchor",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "📸",
+    "id" : "Photojournalist",
+    "income" : 60000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 4
+    },
+    "reward" : "💵",
+    "summary" : "Tells news stories through images.",
+    "title" : "Photojournalist",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "📺",
+    "id" : "Broadcast Producer",
+    "income" : 75000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Oversees on-air shows and production teams.",
+    "title" : "Broadcast Producer",
+    "version" : 2
+  },
+  {
+    "category" : "Aviation",
+    "icon" : "🧑‍🚀",
+    "id" : "Astronaut",
+    "income" : 140000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Distinguished achievements",
+      "luck" : 5
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Trains for and conducts missions in space.",
+    "title" : "Astronaut",
+    "version" : 2
+  },
+  {
+    "category" : "Aviation",
+    "icon" : "🛩️",
+    "id" : "Test Pilot",
+    "income" : 130000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Distinguished achievements",
+      "luck" : 4
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Tests experimental or new aircraft designs.",
+    "title" : "Test Pilot",
+    "version" : 2
+  },
+  {
+    "category" : "Aviation",
+    "icon" : "🎛️",
+    "id" : "Flight Director",
+    "income" : 120000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "Distinguished achievements",
+      "luck" : 4
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Leads mission control operations.",
+    "title" : "Flight Director",
+    "version" : 2
+  },
+  {
+    "category" : "Maritime",
+    "icon" : "🤿",
+    "id" : "Deep Sea Diver",
+    "income" : 90000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 4
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Performs underwater construction and research.",
+    "title" : "Deep Sea Diver",
+    "version" : 2
+  },
+  {
+    "category" : "Media",
+    "icon" : "🧗",
+    "id" : "Stunt Performer",
+    "income" : 65000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 5
+    },
+    "reward" : "💵💵",
+    "summary" : "Performs stunts for film and TV safely.",
+    "title" : "Stunt Performer",
+    "version" : 2
+  },
+  {
+    "category" : "Nature",
+    "icon" : "🗻",
+    "id" : "Mountaineering Guide",
+    "income" : 60000,
+    "persona" : "Outdoors",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 4
+    },
+    "reward" : "💵",
+    "summary" : "Leads clients on technical climbs.",
+    "title" : "Mountaineering Guide",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🔐",
+    "id" : "Cryptographer",
+    "income" : 110000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Designs secure encryption methods.",
+    "title" : "Cryptographer",
+    "version" : 2
+  },
+  {
+    "category" : "Technology",
+    "icon" : "🧬",
+    "id" : "Cyber Forensics Analyst",
+    "income" : 95000,
+    "persona" : "Tools",
+    "requirements" : {
+      "education" : "College",
+      "luck" : 3
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Investigates digital evidence for incidents.",
+    "title" : "Cyber Forensics Analyst",
+    "version" : 2
+  },
+  {
+    "category" : "Science",
+    "icon" : "⚛️",
+    "id" : "Quantum Researcher",
+    "income" : 115000,
+    "persona" : "Science",
+    "requirements" : {
+      "education" : "Distinguished achievements",
+      "luck" : 4
+    },
+    "reward" : "💵💵💵💵",
+    "summary" : "Explores quantum computing and physics.",
+    "title" : "Quantum Researcher",
+    "version" : 2
+  },
+  {
+    "category" : "Hospitality",
+    "icon" : "🍷",
+    "id" : "Sommelier",
+    "income" : 65000,
+    "persona" : "People",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵💵",
+    "summary" : "Curates wine lists and pairs flavors.",
+    "title" : "Sommelier",
+    "version" : 2
+  },
+  {
+    "category" : "Arts",
+    "icon" : "🍫",
+    "id" : "Master Chocolatier",
+    "income" : 60000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Creates artisan chocolates and confections.",
+    "title" : "Master Chocolatier",
+    "version" : 2
+  },
+  {
+    "category" : "Fashion",
+    "icon" : "🧴",
+    "id" : "Perfumer",
+    "income" : 90000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "University, academic degree",
+      "luck" : 4
+    },
+    "reward" : "💵💵💵",
+    "summary" : "Designs fragrances with chemistry and art.",
+    "title" : "Perfumer",
+    "version" : 2
+  },
+  {
+    "category" : "Arts",
+    "icon" : "🎻",
+    "id" : "Luthier",
+    "income" : 60000,
+    "persona" : "Creative",
+    "requirements" : {
+      "education" : "Vocational training",
+      "luck" : 3
+    },
+    "reward" : "💵",
+    "summary" : "Crafts and repairs string instruments.",
+    "title" : "Luthier",
+    "version" : 2
+  }
+]

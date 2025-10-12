@@ -33,7 +33,6 @@ struct CareerDetail: View {
                 }
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .background(Color(.systemMint))
                 .clipShape(RoundedRectangle(cornerRadius: 16))
                 .padding(.horizontal)
             }
@@ -63,7 +62,6 @@ struct CareerDetail: View {
         }
         .padding(12)
         .frame(maxWidth: .infinity)
-        .background(Color(.systemMint))
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }

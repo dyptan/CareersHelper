@@ -53,6 +53,8 @@ public struct MigrationUtils {
 
         // 5) Encode pretty JSON
         let encoder = JSONEncoder()
+        
+        print("Encoding: \(careersV2)")
         if prettyPrinted {
             encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         }
@@ -72,6 +74,7 @@ public struct MigrationUtils {
         )
         let outputURL = documentsURL.appendingPathComponent(outputFilename)
 
+        print("Writing: \(outputURL)")
         do {
             try outputData.write(to: outputURL, options: [.atomic])
         } catch {

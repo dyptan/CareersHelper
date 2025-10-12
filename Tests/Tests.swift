@@ -10,8 +10,9 @@ import Testing
 @testable import CareersApp
 struct Tests {
 
-    @Test func example() async throws {
-        var t = try MigrationUtils.migrateCareersToV2()
+    @Test func example() {
+        try! MigrationUtils.migrateCareersToV2()
+            
     }
 
 }
