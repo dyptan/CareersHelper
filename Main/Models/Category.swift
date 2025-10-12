@@ -1,3 +1,12 @@
+//
+//  Category.swift
+//  CareersApp
+//
+//  Created by Admin on 10/12/25.
+//  Copyright © 2025 Apple. All rights reserved.
+//
+
+
 enum Category: String, CaseIterable, Identifiable, Codable {
     case engineering = "Engineering"
     case arts = "Arts"
@@ -26,7 +35,7 @@ enum Category: String, CaseIterable, Identifiable, Codable {
 
     var id: String { rawValue }
     
-    static func subtitle(for persona: ByInterest) -> String {
+    static func subtitle(for persona: Interests) -> String {
         switch persona {
         case .people: return "Playing doctor, teacher, policeman"
         case .tools: return "Crafting, tinkering, puzzle solving"
@@ -68,7 +77,7 @@ enum Category: String, CaseIterable, Identifiable, Codable {
         }
     }
 
-    var persona: ByInterest {
+    var persona: Interests {
         switch self {
         case .publicServices, .education, .health:
             return .people
@@ -224,39 +233,6 @@ enum Category: String, CaseIterable, Identifiable, Codable {
             return "Hotel staff, chef, server, concierge"
         case .fashion:
             return "Fashion designer, stylist, tailor, merchandiser"
-        }
-    }
-}
-
-enum ByInterest: String, CaseIterable, Identifiable, Codable {
-    case people = "Working with People"
-    case tools = "Tools & Machines"
-    case creative = "Creative & Arts"
-    case outdoors = "Land & Outdoors"
-    case sports = "Sports & Fitness"
-    case science = "Science & Health"
-
-    var id: String { rawValue }
-
-    var icon: String {
-        switch self {
-        case .people: return "🤝"
-        case .tools: return "🛠️"
-        case .creative: return "🎨"
-        case .outdoors: return "🌿"
-        case .sports: return "🏅"
-        case .science: return "🔬"
-        }
-    }
-
-    var shortTitle: String {
-        switch self {
-        case .people: return "People"
-        case .tools: return "Tools"
-        case .creative: return "Creative"
-        case .outdoors: return "Outdoors"
-        case .sports: return "Sports"
-        case .science: return "Science"
         }
     }
 }

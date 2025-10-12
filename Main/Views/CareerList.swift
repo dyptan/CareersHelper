@@ -2,14 +2,14 @@ import SwiftUI
 
 struct CareerList: View {
    
-    func groupedCategories(_ categories: [CareerCategory]) -> [CareerCategory]
+    func groupedCategories(_ categories: [Category]) -> [Category]
     {
         Array(Set(careersAll.map(\.category)).intersection(categories))
     }
 
-    var allPersonas: [ByInterest] { Array(Set(careersAll.map(\.persona))) }
+    var allPersonas: [Interests] { Array(Set(careersAll.map(\.persona))) }
 
-    private func categoriesFor(_ persona: ByInterest) -> [CareerCategory]
+    private func categoriesFor(_ persona: Interests) -> [Category]
     {
         careersAll.filter { $0.persona == persona }.map { $0.category }
     }
@@ -26,7 +26,7 @@ struct CareerList: View {
         }
     }
 
-    private func categoryRows(categories: [CareerCategory]) -> some View {
+    private func categoryRows(categories: [Category]) -> some View {
         List {
             ForEach(groupedCategories(categories)) { category in
                 let filtered = careersAll.filter {
@@ -48,7 +48,7 @@ struct CareerList: View {
                 NavigationLink {
                     categoryRows(categories: categoriesFor(persona))
                 } label: {
-                    PersonaRow(persona: persona)
+                    InterestRow(persona: persona)
                 }
             }
         

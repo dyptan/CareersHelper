@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct CategoryRow: View, Hashable {
-    var category: CareerCategory
+    var category: Category
     var body: some View {
         HStack(spacing: 12) {
-            Text(CareerCategory.icon(for: category))
+            Text(Category.icon(for: category))
                 .font(.system(size: 22))
                 .frame(width: 28)
             VStack(alignment: .leading, spacing: 2) {
@@ -21,5 +21,5 @@ struct CategoryRow: View, Hashable {
 }
 
 #Preview {
-    CategoryRow(category: CareerCategory.design)
+    CategoryRow(category: Category.design)
 }

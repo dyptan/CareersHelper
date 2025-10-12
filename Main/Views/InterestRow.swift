@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct InterestRow: View {
-    var persona: ByInterest
+    var persona: Interests
     var body: some View {
         HStack(spacing: 12) {
             Text(persona.icon)
@@ -9,7 +9,7 @@ struct InterestRow: View {
             VStack(alignment: .leading) {
                 Text(persona.rawValue)
                     .font(.headline)
-                Text(CareerCategory.subtitle(for: persona))
+                Text(Category.subtitle(for: persona))
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
@@ -20,5 +20,5 @@ struct InterestRow: View {
 }
 
 #Preview {
-    InterestRow(persona: ByInterest.people)
+    InterestRow(persona: Interests.people)
 }

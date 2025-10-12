@@ -1,13 +1,18 @@
 import Foundation
 
-
 struct ModelV2: Identifiable, Codable, Hashable {
     let id: String
     let title: String
     let category: String
-    let persona: String
+    let interest: String
     let income: Int
-    let reward: String
+    func reward() -> String {
+        switch income {
+        case 0...60: return "Low"
+        case 61..<120: return "Medium"
+        default: return "High"
+        }
+    }
     let summary: String
     let icon: String
     let requirements: Requirements
@@ -31,9 +36,8 @@ struct ModelV2: Identifiable, Codable, Hashable {
         self.id = career.id
         self.title = career.id
         self.category = career.category.rawValue
-        self.persona = career.persona.shortTitle
+        self.interest = career.persona.shortTitle
         self.income = career.income
-        self.reward = career.reward
         self.summary = career.summary
         self.icon = career.icon
 

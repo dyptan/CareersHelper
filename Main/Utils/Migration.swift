@@ -49,7 +49,7 @@ public struct MigrationUtils {
         }
 
         // 4) Map to [CareerV2]
-        let careersV2 = careers.map { CareerV2(from: $0) }
+        let careersV2 = careers.map { ModelV2(from: $0) }
 
         // 5) Encode pretty JSON
         let encoder = JSONEncoder()
