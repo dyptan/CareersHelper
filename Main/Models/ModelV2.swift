@@ -1,7 +1,7 @@
 import Foundation
 
 
-struct CareerV2: Identifiable, Codable, Hashable {
+struct ModelV2: Identifiable, Codable, Hashable {
     let id: String
     let title: String
     let category: String
@@ -39,7 +39,7 @@ struct CareerV2: Identifiable, Codable, Hashable {
 
         let clampedChances = max(1, min(5, career.chances))
         self.requirements = Requirements(
-            education: CareerV2.mapEducation(fromDifficulty: career.difficulty),
+            education: ModelV2.mapEducation(fromDifficulty: career.difficulty),
             luck: clampedChances
         )
 

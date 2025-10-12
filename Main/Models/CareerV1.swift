@@ -1,6 +1,6 @@
 import Foundation
 
-enum CareerCategory: String, CaseIterable, Identifiable, Codable {
+enum Category: String, CaseIterable, Identifiable, Codable {
     case engineering = "Engineering"
     case arts = "Arts"
     case publicServices = "Public Services"
@@ -39,7 +39,7 @@ enum CareerCategory: String, CaseIterable, Identifiable, Codable {
         }
     }
 
-    static func icon(for category: CareerCategory) -> String {
+    static func icon(for category: Category) -> String {
         switch category {
         case .engineering: return "🧰"
         case .technology: return "💻"
@@ -265,7 +265,7 @@ enum ByInterest: String, CaseIterable, Identifiable, Codable {
 
 struct CareerV1: Identifiable, Hashable, Decodable {
     let id: String
-    var category: CareerCategory
+    var category: Category
     // 0..5 education requirement scale
     var difficulty: Int
     // 1..5 clovers: higher = harder to get paid work
@@ -279,7 +279,7 @@ struct CareerV1: Identifiable, Hashable, Decodable {
     var reward: String
     
     init(id: String,
-         category: CareerCategory,
+         category: Category,
          difficulty: Int,
          chances: Int,
          income: Int,
@@ -307,7 +307,7 @@ struct CareerV1: Identifiable, Hashable, Decodable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
         self.id = try container.decode(String.self, forKey: .id)
-        self.category = try container.decode(CareerCategory.self, forKey: .category)
+        self.category = try container.decode(Category.self, forKey: .category)
 
         let decodedDifficulty = try container.decodeIfPresent(Int.self, forKey: .difficulty) ?? 3
         self.difficulty = max(0, min(5, decodedDifficulty))
