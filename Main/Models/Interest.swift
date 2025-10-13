@@ -7,13 +7,13 @@
 //
 
 
-enum Interests: String, CaseIterable, Identifiable, Codable {
-    case people = "Working with People"
-    case tools = "Tools & Machines"
-    case creative = "Creative & Arts"
-    case outdoors = "Land & Outdoors"
-    case sports = "Sports & Fitness"
-    case science = "Science & Health"
+enum Interest: String, CaseIterable, Identifiable, Codable {
+    case people = "People"
+    case tools = "Tools"
+    case creative = "Creative"
+    case outdoors = "Outdoors"
+    case sports = "Sports"
+    case science = "Science"
 
     var id: String { rawValue }
 

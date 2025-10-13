@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct CareerRow: View {
-    var career: CareerV1
+    var detail: ModelV2
 
     var body: some View {
         HStack(spacing: 12) {
-            Text(career.icon)
+            Text(detail.icon)
                 .font(.system(size: 28))
                 .frame(width: 40, height: 40)
                 .background(Color(.systemGray))
@@ -13,23 +13,22 @@ struct CareerRow: View {
 
             VStack(alignment: .leading, spacing: 6) {
                 HStack {
-                    Text(career.id)
+                    Text(detail.id)
                         .font(.headline)
                     Spacer()
                     // Show reward money emojis directly
-                    Text(career.reward)
+                    Text(detail.reward())
                         .font(.caption2.bold())
                         .padding(.horizontal, 8)
                         .padding(.vertical, 4)
                         .background(Color.green.opacity(0.15))
                         .foregroundStyle(.green)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
-                        .accessibilityLabel("Reward \(career.reward.count / 2) money symbols")
                 }
 
                 HStack(spacing: 8) {
-                    DifficultyView(level: career.difficulty)
-                    ChancesView(chances: career.chances)
+                    DifficultyView(level: detail.requirements.education)
+                    ChancesView(chances: detail.requirements.luck)
                 }
             }
             Spacer()
@@ -66,8 +65,8 @@ private struct ChancesView: View {
 }
 
 #Preview {
-    if let first = careersAll.first {
-        CareerRow(career: first)
+    if let first = detailsAll.first {
+        CareerRow(detail: first)
             .padding()
     }
 }

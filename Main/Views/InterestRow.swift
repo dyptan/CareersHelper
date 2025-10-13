@@ -1,24 +1,23 @@
 import SwiftUI
 
 struct InterestRow: View {
-    var persona: Interests
+    var interest: Interest
     var body: some View {
         HStack(spacing: 12) {
-            Text(persona.icon)
+            Text(interest.icon)
                 .font(.system(size: 28))
             VStack(alignment: .leading) {
-                Text(persona.rawValue)
+                Text(interest.rawValue)
                     .font(.headline)
-                Text(Category.subtitle(for: persona))
+                Text(Category.subtitle(for: interest))
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
             .padding(.vertical, 6)
-            .accessibilityIdentifier("PersonaRow_\(persona.shortTitle)")
         }
     }
 }
 
 #Preview {
-    InterestRow(persona: Interests.people)
+    InterestRow(interest: Interest.people)
 }

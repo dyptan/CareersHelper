@@ -35,7 +35,7 @@ enum Category: String, CaseIterable, Identifiable, Codable {
 
     var id: String { rawValue }
     
-    static func subtitle(for persona: Interests) -> String {
+    static func subtitle(for persona: Interest) -> String {
         switch persona {
         case .people: return "Playing doctor, teacher, policeman"
         case .tools: return "Crafting, tinkering, puzzle solving"
@@ -77,7 +77,7 @@ enum Category: String, CaseIterable, Identifiable, Codable {
         }
     }
 
-    var persona: Interests {
+    var persona: Interest {
         switch self {
         case .publicServices, .education, .health:
             return .people

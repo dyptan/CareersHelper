@@ -5,7 +5,7 @@ struct CareersApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                CareerList()
+                RootList()
             }
         }
     }
@@ -13,6 +13,6 @@ struct CareersApp: App {
 
 #Preview {
     NavigationStack {
-        CareerList()
+        RootList()
     }
 }

@@ -1,34 +1,34 @@
 import SwiftUI
 
-struct CareerDetail: View {
-    var career: CareerV1
+struct DetailView: View {
+    var detail: ModelV2
 
     var body: some View {
         ScrollView {
             VStack(spacing: 16) {
-                Text(career.icon)
+                Text(detail.icon)
                     .font(.system(size: 96))
                     .padding(.top, 16)
 
-                Text(career.id)
+                Text(detail.id)
                     .font(.largeTitle.bold())
 
-                Text(career.category.rawValue)
+                Text(detail.category.rawValue)
                     .font(.headline)
                     .foregroundStyle(.secondary)
 
                 HStack(spacing: 16) {
-                    labelBox(title: "Education", content: stars(level: career.difficulty))
-                    labelBox(title: "Chances", content: Text(String(repeating: "🍀", count: career.chances)))
-                    labelBox(title: "Income", content: Text("\(career.income)"))
-                    labelBox(title: "Reward", content: Text(career.reward))
+                    labelBox(title: "Education", content: stars(level: detail.requirements.education))
+                    labelBox(title: "Chances", content: Text(String(repeating: "🍀", count: detail.requirements.luck)))
+                    labelBox(title: "Income", content: Text("\(detail.income)"))
+                    labelBox(title: "Reward", content: Text(detail.reward()))
                 }
                 .padding(.horizontal)
 
                 VStack(alignment: .leading, spacing: 8) {
                     Text("What is this job?")
                         .font(.title2.bold())
-                    Text(career.summary)
+                    Text(detail.summary)
                         .font(.body)
                 }
                 .padding()
@@ -38,8 +38,8 @@ struct CareerDetail: View {
             }
             .padding(.bottom, 24)
         }
-        .accessibilityIdentifier("CareerDetailRoot")
-        .navigationTitle(career.id)
+        .accessibilityIdentifier("DetailView`")
+        .navigationTitle(detail.id)
 
     }
 
@@ -68,8 +68,8 @@ struct CareerDetail: View {
 
 #Preview {
     NavigationStack {
-        if let first = careersAll.first {
-            CareerDetail(career: first)
+        if let first = detailsAll.first {
+            DetailView(detail: first)
         } else {
             Text("No careers loaded")
         }

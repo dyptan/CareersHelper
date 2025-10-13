@@ -6,7 +6,7 @@
     "income" : 85000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -21,7 +21,7 @@
     "income" : 95000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -36,7 +36,7 @@
     "income" : 105000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -51,7 +51,7 @@
     "income" : 110000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 2
     },
     
@@ -66,7 +66,7 @@
     "income" : 90000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -81,7 +81,7 @@
     "income" : 95000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -96,7 +96,7 @@
     "income" : 85000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -111,7 +111,7 @@
     "income" : 80000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -126,7 +126,7 @@
     "income" : 90000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -141,7 +141,7 @@
     "income" : 90000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -156,7 +156,7 @@
     "income" : 70000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -171,7 +171,7 @@
     "income" : 95000,
     "interest" : "People",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -186,7 +186,7 @@
     "income" : 80000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -201,7 +201,7 @@
     "income" : 75000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -216,7 +216,7 @@
     "income" : 70000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -231,7 +231,7 @@
     "income" : 105000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 2
     },
     
@@ -246,7 +246,7 @@
     "income" : 70000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -261,7 +261,7 @@
     "income" : 85000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -276,7 +276,7 @@
     "income" : 90000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -291,7 +291,7 @@
     "income" : 80000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 4
     },
     
@@ -306,7 +306,7 @@
     "income" : 80000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 2
     },
     
@@ -321,7 +321,7 @@
     "income" : 85000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 2
     },
     
@@ -336,7 +336,7 @@
     "income" : 90000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 2
     },
     
@@ -351,7 +351,7 @@
     "income" : 80000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 2
     },
     
@@ -366,7 +366,7 @@
     "income" : 95000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -381,7 +381,7 @@
     "income" : 85000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 2
     },
     
@@ -396,7 +396,7 @@
     "income" : 100000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -411,7 +411,7 @@
     "income" : 90000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -426,7 +426,7 @@
     "income" : 80000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 2
     },
     
@@ -441,7 +441,7 @@
     "income" : 85000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -456,7 +456,7 @@
     "income" : 65000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -471,7 +471,7 @@
     "income" : 60000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -486,7 +486,7 @@
     "income" : 75000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -501,7 +501,7 @@
     "income" : 50000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Basic language only",
+      "education" : 0,
       "luck" : 5
     },
     
@@ -516,7 +516,7 @@
     "income" : 50000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 5
     },
     
@@ -531,7 +531,7 @@
     "income" : 55000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 5
     },
     
@@ -546,7 +546,7 @@
     "income" : 50000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 3
     },
     
@@ -561,7 +561,7 @@
     "income" : 55000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -576,7 +576,7 @@
     "income" : 45000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 2
     },
     
@@ -591,7 +591,7 @@
     "income" : 60000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 1
     },
     
@@ -606,7 +606,7 @@
     "income" : 80000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Distinguished achievements",
+      "education" : 5,
       "luck" : 3
     },
     
@@ -621,7 +621,7 @@
     "income" : 60000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -636,7 +636,7 @@
     "income" : 70000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -651,7 +651,7 @@
     "income" : 65000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 1
     },
     
@@ -666,7 +666,7 @@
     "income" : 120000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Distinguished achievements",
+      "education" : 5,
       "luck" : 2
     },
     
@@ -681,7 +681,7 @@
     "income" : 160000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Distinguished achievements",
+      "education" : 5,
       "luck" : 3
     },
     
@@ -696,7 +696,7 @@
     "income" : 110000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Distinguished achievements",
+      "education" : 5,
       "luck" : 2
     },
     
@@ -711,7 +711,7 @@
     "income" : 90000,
     "interest" : "People",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 2
     },
     
@@ -726,7 +726,7 @@
     "income" : 65000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -741,7 +741,7 @@
     "income" : 80000,
     "interest" : "People",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -756,7 +756,7 @@
     "income" : 60000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -771,7 +771,7 @@
     "income" : 80000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Distinguished achievements",
+      "education" : 5,
       "luck" : 3
     },
     
@@ -786,7 +786,7 @@
     "income" : 70000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -801,7 +801,7 @@
     "income" : 110000,
     "interest" : "People",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -816,7 +816,7 @@
     "income" : 120000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Distinguished achievements",
+      "education" : 5,
       "luck" : 5
     },
     
@@ -831,7 +831,7 @@
     "income" : 60000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -846,7 +846,7 @@
     "income" : 80000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -861,7 +861,7 @@
     "income" : 65000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -876,7 +876,7 @@
     "income" : 65000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -891,7 +891,7 @@
     "income" : 65000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -906,7 +906,7 @@
     "income" : 55000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 1
     },
     
@@ -921,7 +921,7 @@
     "income" : 90000,
     "interest" : "People",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 4
     },
     
@@ -936,7 +936,7 @@
     "income" : 90000,
     "interest" : "People",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -951,7 +951,7 @@
     "income" : 70000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -966,7 +966,7 @@
     "income" : 80000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -981,7 +981,7 @@
     "income" : 85000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -996,7 +996,7 @@
     "income" : 130000,
     "interest" : "People",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 5
     },
     
@@ -1011,7 +1011,7 @@
     "income" : 110000,
     "interest" : "People",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 4
     },
     
@@ -1026,7 +1026,7 @@
     "income" : 80000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -1041,7 +1041,7 @@
     "income" : 65000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -1056,7 +1056,7 @@
     "income" : 90000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -1071,7 +1071,7 @@
     "income" : 70000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -1086,7 +1086,7 @@
     "income" : 90000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -1101,7 +1101,7 @@
     "income" : 75000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -1116,7 +1116,7 @@
     "income" : 90000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -1131,7 +1131,7 @@
     "income" : 95000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -1146,7 +1146,7 @@
     "income" : 80000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -1161,7 +1161,7 @@
     "income" : 60000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -1176,7 +1176,7 @@
     "income" : 60000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -1191,7 +1191,7 @@
     "income" : 65000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -1206,7 +1206,7 @@
     "income" : 70000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -1221,7 +1221,7 @@
     "income" : 70000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -1236,7 +1236,7 @@
     "income" : 65000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -1251,7 +1251,7 @@
     "income" : 80000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -1266,7 +1266,7 @@
     "income" : 55000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -1281,7 +1281,7 @@
     "income" : 60000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -1296,7 +1296,7 @@
     "income" : 45000,
     "interest" : "People",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 3
     },
     
@@ -1311,7 +1311,7 @@
     "income" : 70000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -1326,7 +1326,7 @@
     "income" : 65000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -1341,7 +1341,7 @@
     "income" : 70000,
     "interest" : "People",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 3
     },
     
@@ -1356,7 +1356,7 @@
     "income" : 90000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -1371,7 +1371,7 @@
     "income" : 55000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -1386,7 +1386,7 @@
     "income" : 60000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -1401,7 +1401,7 @@
     "income" : 60000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -1416,7 +1416,7 @@
     "income" : 55000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -1431,7 +1431,7 @@
     "income" : 55000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -1446,7 +1446,7 @@
     "income" : 90000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -1461,7 +1461,7 @@
     "income" : 120000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Distinguished achievements",
+      "education" : 5,
       "luck" : 3
     },
     
@@ -1476,7 +1476,7 @@
     "income" : 105000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 2
     },
     
@@ -1491,7 +1491,7 @@
     "income" : 60000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 3
     },
     
@@ -1506,7 +1506,7 @@
     "income" : 95000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -1521,7 +1521,7 @@
     "income" : 60000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -1536,7 +1536,7 @@
     "income" : 60000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -1551,7 +1551,7 @@
     "income" : 55000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -1566,7 +1566,7 @@
     "income" : 60000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -1581,7 +1581,7 @@
     "income" : 65000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 4
     },
     
@@ -1596,7 +1596,7 @@
     "income" : 70000,
     "interest" : "Science",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -1611,7 +1611,7 @@
     "income" : 70000,
     "interest" : "Science",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -1626,7 +1626,7 @@
     "income" : 90000,
     "interest" : "Science",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -1641,7 +1641,7 @@
     "income" : 55000,
     "interest" : "Science",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -1656,7 +1656,7 @@
     "income" : 90000,
     "interest" : "Science",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -1671,7 +1671,7 @@
     "income" : 70000,
     "interest" : "Science",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -1686,7 +1686,7 @@
     "income" : 55000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -1701,7 +1701,7 @@
     "income" : 80000,
     "interest" : "People",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -1716,7 +1716,7 @@
     "income" : 60000,
     "interest" : "People",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -1731,7 +1731,7 @@
     "income" : 55000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -1746,7 +1746,7 @@
     "income" : 55000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -1761,7 +1761,7 @@
     "income" : 60000,
     "interest" : "Sports",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 5
     },
     
@@ -1776,7 +1776,7 @@
     "income" : 60000,
     "interest" : "Sports",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -1791,7 +1791,7 @@
     "income" : 55000,
     "interest" : "Sports",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -1806,7 +1806,7 @@
     "income" : 65000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -1821,7 +1821,7 @@
     "income" : 52000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -1836,7 +1836,7 @@
     "income" : 45000,
     "interest" : "People",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 1
     },
     
@@ -1851,7 +1851,7 @@
     "income" : 42000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Basic language only",
+      "education" : 0,
       "luck" : 1
     },
     
@@ -1866,7 +1866,7 @@
     "income" : 90000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -1881,7 +1881,7 @@
     "income" : 50000,
     "interest" : "People",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 1
     },
     
@@ -1896,7 +1896,7 @@
     "income" : 65000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -1911,7 +1911,7 @@
     "income" : 70000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -1926,7 +1926,7 @@
     "income" : 65000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -1941,7 +1941,7 @@
     "income" : 100000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -1956,7 +1956,7 @@
     "income" : 75000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -1971,7 +1971,7 @@
     "income" : 90000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -1986,7 +1986,7 @@
     "income" : 80000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Basic language only",
+      "education" : 0,
       "luck" : 5
     },
     
@@ -2001,7 +2001,7 @@
     "income" : 90000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Basic language only",
+      "education" : 0,
       "luck" : 5
     },
     
@@ -2016,7 +2016,7 @@
     "income" : 95000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -2031,7 +2031,7 @@
     "income" : 90000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 4
     },
     
@@ -2046,7 +2046,7 @@
     "income" : 65000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -2061,7 +2061,7 @@
     "income" : 60000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 2
     },
     
@@ -2076,7 +2076,7 @@
     "income" : 55000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -2091,7 +2091,7 @@
     "income" : 95000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 2
     },
     
@@ -2106,7 +2106,7 @@
     "income" : 85000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -2121,7 +2121,7 @@
     "income" : 95000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -2136,7 +2136,7 @@
     "income" : 100000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 4
     },
     
@@ -2151,7 +2151,7 @@
     "income" : 95000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 4
     },
     
@@ -2166,7 +2166,7 @@
     "income" : 55000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 1
     },
     
@@ -2181,7 +2181,7 @@
     "income" : 60000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 2
     },
     
@@ -2196,7 +2196,7 @@
     "income" : 60000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 1
     },
     
@@ -2211,7 +2211,7 @@
     "income" : 52000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 1
     },
     
@@ -2226,7 +2226,7 @@
     "income" : 48000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 2
     },
     
@@ -2241,7 +2241,7 @@
     "income" : 65000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -2256,7 +2256,7 @@
     "income" : 70000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 2
     },
     
@@ -2271,7 +2271,7 @@
     "income" : 65000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -2286,7 +2286,7 @@
     "income" : 60000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -2301,7 +2301,7 @@
     "income" : 58000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 2
     },
     
@@ -2316,7 +2316,7 @@
     "income" : 56000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -2331,7 +2331,7 @@
     "income" : 70000,
     "interest" : "Science",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -2346,7 +2346,7 @@
     "income" : 80000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 2
     },
     
@@ -2361,7 +2361,7 @@
     "income" : 52000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -2376,7 +2376,7 @@
     "income" : 65000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 1
     },
     
@@ -2391,7 +2391,7 @@
     "income" : 60000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Basic language only",
+      "education" : 0,
       "luck" : 5
     },
     
@@ -2406,7 +2406,7 @@
     "income" : 55000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Basic language only",
+      "education" : 0,
       "luck" : 5
     },
     
@@ -2421,7 +2421,7 @@
     "income" : 55000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Basic language only",
+      "education" : 0,
       "luck" : 4
     },
     
@@ -2436,7 +2436,7 @@
     "income" : 65000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -2451,7 +2451,7 @@
     "income" : 48000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "High school",
+      "education" : 1,
       "luck" : 2
     },
     
@@ -2466,7 +2466,7 @@
     "income" : 60000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -2481,7 +2481,7 @@
     "income" : 65000,
     "interest" : "Sports",
     "requirements" : {
-      "education" : "Basic language only",
+      "education" : 0,
       "luck" : 5
     },
     
@@ -2496,7 +2496,7 @@
     "income" : 95000,
     "interest" : "People",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -2511,7 +2511,7 @@
     "income" : 85000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 4
     },
     
@@ -2526,7 +2526,7 @@
     "income" : 90000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -2541,7 +2541,7 @@
     "income" : 70000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -2556,7 +2556,7 @@
     "income" : 100000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 4
     },
     
@@ -2571,7 +2571,7 @@
     "income" : 100000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 4
     },
     
@@ -2586,7 +2586,7 @@
     "income" : 85000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 2
     },
     
@@ -2601,7 +2601,7 @@
     "income" : 80000,
     "interest" : "Science",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -2616,7 +2616,7 @@
     "income" : 90000,
     "interest" : "People",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -2631,7 +2631,7 @@
     "income" : 60000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -2646,7 +2646,7 @@
     "income" : 70000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 4
     },
     
@@ -2661,7 +2661,7 @@
     "income" : 70000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 4
     },
     
@@ -2676,7 +2676,7 @@
     "income" : 60000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 4
     },
     
@@ -2691,7 +2691,7 @@
     "income" : 75000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -2706,7 +2706,7 @@
     "income" : 140000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Distinguished achievements",
+      "education" : 5,
       "luck" : 5
     },
     
@@ -2721,7 +2721,7 @@
     "income" : 130000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Distinguished achievements",
+      "education" : 5,
       "luck" : 4
     },
     
@@ -2736,7 +2736,7 @@
     "income" : 120000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "Distinguished achievements",
+      "education" : 5,
       "luck" : 4
     },
     
@@ -2751,7 +2751,7 @@
     "income" : 90000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 4
     },
     
@@ -2766,7 +2766,7 @@
     "income" : 65000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 5
     },
     
@@ -2781,7 +2781,7 @@
     "income" : 60000,
     "interest" : "Outdoors",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 4
     },
     
@@ -2796,7 +2796,7 @@
     "income" : 110000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 3
     },
     
@@ -2811,7 +2811,7 @@
     "income" : 95000,
     "interest" : "Tools",
     "requirements" : {
-      "education" : "College",
+      "education" : 3,
       "luck" : 3
     },
     
@@ -2826,7 +2826,7 @@
     "income" : 115000,
     "interest" : "Science",
     "requirements" : {
-      "education" : "Distinguished achievements",
+      "education" : 5,
       "luck" : 4
     },
     
@@ -2841,7 +2841,7 @@
     "income" : 65000,
     "interest" : "People",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -2856,7 +2856,7 @@
     "income" : 60000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
@@ -2871,7 +2871,7 @@
     "income" : 90000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "University, academic degree",
+      "education" : 4,
       "luck" : 4
     },
     
@@ -2886,7 +2886,7 @@
     "income" : 60000,
     "interest" : "Creative",
     "requirements" : {
-      "education" : "Vocational training",
+      "education" : 2,
       "luck" : 3
     },
     
