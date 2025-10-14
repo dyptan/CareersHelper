@@ -1,6 +1,6 @@
 import Foundation
 
-struct ModelV2: Identifiable, Codable, Hashable {
+struct Detail: Identifiable, Codable, Hashable {
     let id: String
     let title: String
     let category: Category
