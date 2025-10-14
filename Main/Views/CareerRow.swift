@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CareerRow: View {
-    var detail: ModelV2
+    var detail: Detail
 
     var body: some View {
         HStack(spacing: 12) {

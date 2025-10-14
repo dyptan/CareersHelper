@@ -28,14 +28,4 @@ enum Interest: String, CaseIterable, Identifiable, Codable {
         }
     }
 
-    var shortTitle: String {
-        switch self {
-        case .people: return "People"
-        case .tools: return "Tools"
-        case .creative: return "Creative"
-        case .outdoors: return "Outdoors"
-        case .sports: return "Sports"
-        case .science: return "Science"
-        }
-    }
 }

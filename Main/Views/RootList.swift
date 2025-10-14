@@ -14,7 +14,7 @@ struct RootList: View {
         detailsAll.filter { $0.interest == interest }.map { $0.category }
     }
 
-    private func careerRows(details: [ModelV2]) -> some View {
+    private func careerRows(details: [Detail]) -> some View {
         List {
             ForEach(details) { detail in
                 NavigationLink {

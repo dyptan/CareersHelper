@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct DetailView: View {
-    var detail: ModelV2
+    var detail: Detail
 
     var body: some View {
         ScrollView {
@@ -39,7 +39,7 @@ struct DetailView: View {
             .padding(.bottom, 24)
         }
         .accessibilityIdentifier("DetailView`")
-        .navigationTitle(detail.id)
+        .navigationTitle("")
 
     }
 
