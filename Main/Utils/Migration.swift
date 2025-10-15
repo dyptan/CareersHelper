@@ -1,11 +1,3 @@
-////
-////  Utils.swift
-////  CareersApp
-////
-////  Created by Ivan Dyptan on 11.10.25.
-////  Copyright © 2025 Apple. All rights reserved.
-////
-
 import Foundation
 
 enum MigrationError: Error {

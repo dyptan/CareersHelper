@@ -8,9 +8,9 @@ struct HomeView: View {
     }
 
     // Use effectiveInterest for grouping
-    var interests: [Interest] { Array(Set(detailsAll.map(\.effectiveInterest))) }
+    var interests: [Group] { Array(Set(detailsAll.map(\.effectiveInterest))) }
 
-    private func categoriesFor(_ interest: Interest) -> [Category]
+    private func categoriesFor(_ interest: Group) -> [Category]
     {
         detailsAll.filter { $0.effectiveInterest == interest }.map { $0.category }
     }
@@ -21,7 +21,7 @@ struct HomeView: View {
                 NavigationLink {
                     DetailView(detail: detail)
                 } label: {
-                    CareerRow(detail: detail)
+                    DetailRow(detail: detail)
                 }
             }
         }
@@ -47,7 +47,7 @@ struct HomeView: View {
                 NavigationLink {
                     categoryRows(categories: categoriesFor(interest))
                 } label: {
-                    InterestRow(interest: interest)
+                    GroupRow(interest: interest)
                 }
             }
         

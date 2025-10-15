@@ -1,12 +1,3 @@
-//
-//  Category.swift
-//  CareersApp
-//
-//  Created by Admin on 10/12/25.
-//  Copyright © 2025 Apple. All rights reserved.
-//
-
-
 enum Category: String, CaseIterable, Identifiable, Codable {
     case engineering = "Engineering"
     case arts = "Arts"
@@ -15,7 +6,7 @@ enum Category: String, CaseIterable, Identifiable, Codable {
     case health = "Health"
     case technology = "Technology"
     case education = "Education"
-    case outdoors = "Nature"
+    case agriculture = "Agriculture"
     case design = "Design"
     case language = "Language"
     case media = "Media"
@@ -33,6 +24,7 @@ enum Category: String, CaseIterable, Identifiable, Codable {
     case hospitality = "Hospitality"
     case fashion = "Fashion"
     case service = "Service"
+    case manufacturing = "Manufacturing"
 
     var id: String { rawValue }
 
@@ -45,7 +37,7 @@ enum Category: String, CaseIterable, Identifiable, Codable {
         case .sports: return "🏆"
         case .health: return "🩺"
         case .education: return "📚"
-        case .outdoors: return "🌲"
+        case .agriculture: return "🌾"
 
         // New categories
         case .design: return "🖌️"
@@ -65,18 +57,19 @@ enum Category: String, CaseIterable, Identifiable, Codable {
         case .hospitality: return "🍽️"
         case .fashion: return "👗"
         case .service: return "🛍️"
+        case .manufacturing: return "🧪"
         }
     }
 
-    var persona: Interest {
+    var persona: Group {
         switch self {
         case .publicServices, .education, .health, .service:
             return .people
-        case .engineering, .technology:
+        case .engineering, .technology, .manufacturing:
             return .tools
         case .arts:
             return .creative
-        case .outdoors:
+        case .agriculture:
             return .outdoors
         case .sports:
             return .sports
@@ -133,10 +126,8 @@ enum Category: String, CaseIterable, Identifiable, Codable {
             return "Drawing, music, dance, cooking, and creating beautiful things that make people smile."
         case .sports:
             return "Playing and coaching sports, staying active, and working as a team to reach goals."
-        case .outdoors:
-            return "Caring for parks, animals, and our planet. Work outside and protect nature."
-
-        // New descriptions
+        case .agriculture:
+            return "Farming, growing food, and taking care of animals. It's all about nurturing life."
         case .design:
             return "Make things look great and work well—like logos, apps, clothes, and rooms."
         case .language:
@@ -169,10 +160,12 @@ enum Category: String, CaseIterable, Identifiable, Codable {
             return "Welcome guests in hotels, restaurants, and events to make their day great."
         case .fashion:
             return "Create clothing and styles, follow trends, and help people express themselves."
-            
         case .service:
             return "General service work: babysitting, cleaning, and doing errands."
+        case .manufacturing:
+            return "Make products from raw materials: factories, workshops, and artisans."
         }
+        
     }
 
     var examples: String {
@@ -191,10 +184,8 @@ enum Category: String, CaseIterable, Identifiable, Codable {
             return "Artist, musician, chef, designer, actor"
         case .sports:
             return "Athlete, coach, trainer, referee"
-        case .outdoors:
-            return "Park ranger, gardener, marine biologist"
-
-        // New examples
+        case .agriculture:
+            return "Agriculturist, horticulturist, livestock"
         case .design:
             return "Graphic, UI/UX, fashion, interior"
         case .language:
@@ -227,9 +218,10 @@ enum Category: String, CaseIterable, Identifiable, Codable {
             return "Hotel staff, chef, server, concierge"
         case .fashion:
             return "Fashion designer, stylist, tailor, merchandiser"
-            
         case .service:
             return "Dog sitter, pet groomer, personal trainer"
+        case .manufacturing:
+            return "Plumber, electrician, welder"
         }
     }
 }

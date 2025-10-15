@@ -1,12 +1,4 @@
-//
-//  Interests.swift
-//  CareersApp
-//
-//  Created by Admin on 10/12/25.
-//  Copyright © 2025 Apple. All rights reserved.
-//
-
-enum Interest: String, CaseIterable, Identifiable, Codable {
+enum Group: String, CaseIterable, Identifiable, Codable {
     case people = "People"
     case tools = "Tools"
     case creative = "Creative"

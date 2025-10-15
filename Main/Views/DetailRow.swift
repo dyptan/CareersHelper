@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CareerRow: View {
+struct DetailRow: View {
     var detail: Detail
 
     var body: some View {
@@ -51,9 +51,8 @@ private struct DifficultyView: View {
 private struct ChancesView: View {
     let chances: Int
     var body: some View {
-        let c = max(1, min(5, chances))
         HStack(spacing: 4) {
-            Text(String(repeating: "🍀", count: c))
+            Text(String(repeating: "🍀", count: chances))
         }
         .font(.caption)
     }
@@ -61,7 +60,7 @@ private struct ChancesView: View {
 
 #Preview {
     if let first = detailsAll.first {
-        CareerRow(detail: first)
+        DetailRow(detail: first)
             .padding()
     }
 }

@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct InterestRow: View {
-    var interest: Interest
+struct GroupRow: View {
+    var interest: Group
     var body: some View {
         HStack(spacing: 12) {
             Text(interest.icon)
@@ -19,5 +19,5 @@ struct InterestRow: View {
 }
 
 #Preview {
-    InterestRow(interest: Interest.people)
+    GroupRow(interest: Group.people)
 }

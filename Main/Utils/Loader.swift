@@ -1,6 +1,5 @@
 import Foundation
 
-// Switch to the new V3 dataset (no "interest" field; education mapped to EU EQF)
 var detailsAll: [Detail] = load("dataV3.json")
 
 func load<T: Decodable>(_ filename: String) -> T {

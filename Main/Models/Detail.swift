@@ -1,8 +1,30 @@
 import Foundation
 
 struct Detail: Identifiable, Codable, Hashable {
+    // luck: 0 = Low-paid, poor working conditions, "desperation jobs"
+    // luck: 1 = Mainstream, steady jobs (nurse, teacher, technician, etc)
+    // luck: 2 = Highly competitive/fast-growing, but broadly accessible (tech, design, entry data, etc)
+    // luck: 3 = Rare, niche, or out-of-date professions
+    // luck: 4 = Elite, prestigious, extremely selective (investment banker, astronaut, etc)
+    // luck: 5 = High risk/high reward (influencer, celebrity, eSports, etc)
+    //
+    // education: 0 = EQF 1 (No formal education / basic skills)
+    // education: 1 = EQF 2 (Primary school)
+    // education: 2 = EQF 3 (Lower secondary)
+    // education: 3 = EQF 4 (Upper secondary, high school, apprenticeship)
+    // education: 4 = EQF 5 (Short-cycle tertiary or advanced vocational)
+    // education: 5 = EQF 6 (Bachelor's degree or equivalent)
+    // education: 6 = EQF 7 (Master's degree or equivalent)
+    // education: 7 = EQF 8 (Doctorate or equivalent)
+    //
+    // cognitive/physical requirement levels (0–5):
+    //   0 = Not needed
+    //   1 = Minimal/basic
+    //   2 = Somewhat helpful
+    //   3 = Clearly useful/moderate
+    //   4 = Important/high
+    //   5 = Essential/critical for success
     let id: String
-    let title: String
     let category: Category
     let income: Int
     func reward() -> String {
@@ -73,11 +95,11 @@ struct Detail: Identifiable, Codable, Hashable {
         }
     }
 
-    private func personaScores() -> [Interest: Double] {
+    private func personaScores() -> [Group: Double] {
         let r = requirements
 
         // Base scores from digitized traits
-        var scores: [Interest: Double] = [
+        var scores: [Group: Double] = [
             .people:      1.0 * Double(r.socialCommunication) + 0.7 * Double(r.teamLeadership) + 0.5 * Double(r.influenceAndNetworking) + 0.3 * Double(r.attentionToDetail) + 0.2 * Double(r.resilienceCognitive),
             .tools:       1.0 * Double(r.analyticalReasoning) + 0.7 * Double(r.attentionToDetail) + 0.5 * Double(r.spatialThinking) + 0.2 * Double(r.resilienceCognitive),
             .creative:    1.0 * Double(r.creativeExpression) + 0.4 * Double(r.socialCommunication),
@@ -112,7 +134,7 @@ struct Detail: Identifiable, Codable, Hashable {
         return scores
     }
 
-    var effectiveInterest: Interest {
+    var effectiveInterest: Group {
         // If any digitized trait is present (>0), use scoring
         let r = requirements
         let hasTraits =
