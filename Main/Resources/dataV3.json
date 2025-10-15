@@ -1,0 +1,62 @@
+[
+  {
+    "id": "job-001",
+    "title": "Community Support Assistant",
+    "category": "Service",
+    "income": 55,
+    "summary": "Help community members with day-to-day needs and organize local activities.",
+    "icon": "🤝",
+    "requirements": {
+      "education": 3,
+      "luck": 2,
+      "cognitive": {
+        "analyticalReasoning": 1,
+        "creativeExpression": 2,
+        "socialCommunication": 5,
+        "teamLeadership": 3,
+        "influenceAndNetworking": 3,
+        "riskTolerance": 1,
+        "spatialThinking": 1,
+        "attentionToDetail": 2,
+        "resilienceCognitive": 3
+      },
+      "physical": {
+        "mechanicalOperation": 0,
+        "physicalAbility": 2,
+        "outdoorOrientation": 1,
+        "resiliencePhysical": 2
+      }
+    },
+    "version": 3
+  },
+  {
+    "id": "job-002",
+    "title": "Junior Lab Technician",
+    "category": "Science",
+    "income": 95,
+    "summary": "Assist with lab experiments, measurements, and sample preparation.",
+    "icon": "🔬",
+    "requirements": {
+      "education": 5,
+      "luck": 2,
+      "cognitive": {
+        "analyticalReasoning": 5,
+        "creativeExpression": 2,
+        "socialCommunication": 2,
+        "teamLeadership": 1,
+        "influenceAndNetworking": 1,
+        "riskTolerance": 2,
+        "spatialThinking": 3,
+        "attentionToDetail": 5,
+        "resilienceCognitive": 3
+      },
+      "physical": {
+        "mechanicalOperation": 2,
+        "physicalAbility": 2,
+        "outdoorOrientation": 0,
+        "resiliencePhysical": 2
+      }
+    },
+    "version": 3
+  }
+]

@@ -1,17 +1,18 @@
 import SwiftUI
 
-struct RootList: View {
+struct HomeView: View {
    
     func distinct(categories: [Category]) -> [Category]
     {
         Array(Set(detailsAll.map(\.category)).intersection(categories))
     }
 
-    var interests: [Interest] { Array(Set(detailsAll.map(\.interest))) }
+    // Use effectiveInterest for grouping
+    var interests: [Interest] { Array(Set(detailsAll.map(\.effectiveInterest))) }
 
     private func categoriesFor(_ interest: Interest) -> [Category]
     {
-        detailsAll.filter { $0.interest == interest }.map { $0.category }
+        detailsAll.filter { $0.effectiveInterest == interest }.map { $0.category }
     }
 
     private func careerRows(details: [Detail]) -> some View {
@@ -50,12 +51,12 @@ struct RootList: View {
                 }
             }
         
-        }
+        }.navigationTitle("What kind of activities are closest to you?")
     }
 }
 
 #Preview {
     NavigationStack {
-        RootList()
+        HomeView()
     }
 }

@@ -5,7 +5,7 @@ struct CareersApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                RootList()
+                HomeView()
             }
         }
     }
@@ -13,6 +13,6 @@ struct CareersApp: App {
 
 #Preview {
     NavigationStack {
-        RootList()
+        HomeView()
     }
 }

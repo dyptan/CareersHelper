@@ -38,7 +38,6 @@ struct DetailView: View {
             }
             .padding(.bottom, 24)
         }
-        .accessibilityIdentifier("DetailView`")
         .navigationTitle("")
 
     }

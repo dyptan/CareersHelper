@@ -32,19 +32,9 @@ enum Category: String, CaseIterable, Identifiable, Codable {
     case humanities = "Humanities"
     case hospitality = "Hospitality"
     case fashion = "Fashion"
+    case service = "Service"
 
     var id: String { rawValue }
-    
-    static func subtitle(for persona: Interest) -> String {
-        switch persona {
-        case .people: return "Playing doctor, teacher, policeman"
-        case .tools: return "Crafting, tinkering, puzzle solving"
-        case .creative: return "Drawing, singing, dancing"
-        case .outdoors: return "Feeding animals, fishing, growing plants"
-        case .sports: return "Agile games, competitions"
-        case .science: return "Observing ants, stars, lab experiments"
-        }
-    }
 
     static func icon(for category: Category) -> String {
         switch category {
@@ -74,12 +64,13 @@ enum Category: String, CaseIterable, Identifiable, Codable {
         case .humanities: return "🏛️"
         case .hospitality: return "🍽️"
         case .fashion: return "👗"
+        case .service: return "🛍️"
         }
     }
 
     var persona: Interest {
         switch self {
-        case .publicServices, .education, .health:
+        case .publicServices, .education, .health, .service:
             return .people
         case .engineering, .technology:
             return .tools
@@ -178,6 +169,9 @@ enum Category: String, CaseIterable, Identifiable, Codable {
             return "Welcome guests in hotels, restaurants, and events to make their day great."
         case .fashion:
             return "Create clothing and styles, follow trends, and help people express themselves."
+            
+        case .service:
+            return "General service work: babysitting, cleaning, and doing errands."
         }
     }
 
@@ -233,6 +227,9 @@ enum Category: String, CaseIterable, Identifiable, Codable {
             return "Hotel staff, chef, server, concierge"
         case .fashion:
             return "Fashion designer, stylist, tailor, merchandiser"
+            
+        case .service:
+            return "Dog sitter, pet groomer, personal trainer"
         }
     }
 }

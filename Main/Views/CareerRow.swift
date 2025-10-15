@@ -16,7 +16,6 @@ struct CareerRow: View {
                     Text(detail.id)
                         .font(.headline)
                     Spacer()
-                    // Show reward money emojis directly
                     Text(detail.reward())
                         .font(.caption2.bold())
                         .padding(.horizontal, 8)
@@ -40,13 +39,11 @@ struct CareerRow: View {
 private struct DifficultyView: View {
     let level: Int
     var body: some View {
-        // 0..5 education stars using emoji
         let filled = max(0, min(5, level))
         let empty = max(0, 5 - filled)
         HStack(spacing: 2) {
             Text(String(repeating: "⭐️", count: filled) + String(repeating: "☆", count: empty))
                 .font(.caption)
-                .accessibilityLabel("Education level \(filled) out of 5")
         }
     }
 }
@@ -59,8 +56,6 @@ private struct ChancesView: View {
             Text(String(repeating: "🍀", count: c))
         }
         .font(.caption)
-        .accessibilityElement(children: .combine)
-        .accessibilityLabel("Chances \(c) clovers. Higher means harder to get paid.")
     }
 }
 

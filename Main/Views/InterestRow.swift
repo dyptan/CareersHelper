@@ -9,7 +9,7 @@ struct InterestRow: View {
             VStack(alignment: .leading) {
                 Text(interest.rawValue)
                     .font(.headline)
-                Text(Category.subtitle(for: interest))
+                Text(interest.examples)
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
