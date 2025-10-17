@@ -1,6 +1,27 @@
 import SwiftUI
 
+struct ExtraActivity {
+    let label: String
+    let abilityKeyPath: WritableKeyPath<Abilities, Int>
+}
 
+let schoolActivities: [ExtraActivity] = [
+    ExtraActivity(label: "Sports", abilityKeyPath: \.physicalAbility),
+    ExtraActivity(label: "Music", abilityKeyPath: \.creativeExpression),
+    ExtraActivity(label: "Painting", abilityKeyPath: \.creativeExpression),
+    ExtraActivity(label: "Chess", abilityKeyPath: \.attentionToDetail),
+    ExtraActivity(label: "Math Tutor", abilityKeyPath: \.analyticalReasoning),
+]
+
+let collegeActivities: [ExtraActivity] = [
+    ExtraActivity(label: "Internship", abilityKeyPath: \.attentionToDetail),
+    ExtraActivity(label: "Student Government", abilityKeyPath: \.teamLeadership),
+    ExtraActivity(label: "Research Assistant", abilityKeyPath: \.analyticalReasoning),
+    ExtraActivity(label: "Hackathons", abilityKeyPath: \.creativeExpression),
+    ExtraActivity(label: "Volunteer Work", abilityKeyPath: \.socialCommunication),
+    ExtraActivity(label: "Public speaking / debate clubs", abilityKeyPath: \.influenceAndNetworking),
+    ExtraActivity(label: "Study Abroad", abilityKeyPath: \.riskTolerance)
+]
 
 struct PlayerView: View {
     @StateObject private var player = Player()
@@ -49,25 +70,33 @@ struct PlayerView: View {
 
                 Divider()
 
-                if player.age < 18 {
+                if player.education.last!.1.eqf < 5 {
                     Text("Choose an activity to boost a skill:")
-                        .font(.headline)
-                        .padding(.top, 8)
-
-                    ScrollView {
-                        VStack(spacing: 10) {
-                            ForEach(Abilities.skillNames, id: \.label) { skill in
-                                Button {
-                                    player.boostAbility(skill.keyPath)
-                                } label: {
-                                    Text("+1 \(skill.label)")
-                                        .frame(maxWidth: .infinity)
+                        ScrollView {
+                            VStack(spacing: 10) {
+                                ForEach(schoolActivities, id: \.label) { activity in
+                                    Button {
+                                        player.abilities[keyPath: activity.abilityKeyPath] += 1
+                                        player.age += 1
+                                    } label: {
+                                        Text(activity.label)
+                                            .frame(maxWidth: .infinity)
+                                    }
+                                    .buttonStyle(.bordered)
                                 }
-                                .buttonStyle(.borderedProminent)
                             }
                         }
-                    }
-                    .padding(.bottom, 8)
+                        .padding(.bottom, 8)
+                        Button {
+                            player.age += 1
+                            player.education.append((TertiaryProfile.trades, Level.Certified))
+                        } label: {
+                            Text("Certification")
+                                .frame(maxWidth: .infinity)
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .padding(.top, 5)
+                    
                 } else {
                    Button {
                         player.age += 1
@@ -77,11 +106,34 @@ struct PlayerView: View {
                     }
                     .buttonStyle(.borderedProminent)
                 }
+                
+                if player.education.last!.1.eqf >= 5 {
+                    Divider()
+                    Text("College Activities")
+                        .font(.headline)
+                    ScrollView {
+                        VStack(spacing: 10) {
+                            ForEach(collegeActivities, id: \.label) { activity in
+                                Button {
+                                    player.abilities[keyPath: activity.abilityKeyPath] += 1
+                                    player.age += 1
+                                } label: {
+                                    Text(activity.label)
+                                        .frame(maxWidth: .infinity)
+                                }
+                                .buttonStyle(.bordered)
+                            }
+                        }
+                    }
+                    .padding(.bottom, 8)
+                }
             }
             .navigationTitle("Player Growth")
             .padding()
-            .onAppear {
-//                checkForDecision()
+            .onChange(of: player.age) { oldValue, newValue in
+                if newValue == 18 {
+                    showDecisionSheet = true
+                }
             }
             .sheet(isPresented: $showDecisionSheet) {
                 NavigationStack {
