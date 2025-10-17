@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ExtraActivity {
     let label: String
-    let abilityKeyPath: WritableKeyPath<Abilities, Int>
+    let abilityKeyPath: WritableKeyPath<SoftSkills, Int>
 }
 
 let schoolActivities: [ExtraActivity] = [
@@ -39,11 +39,13 @@ struct PlayerView: View {
     @StateObject private var player = Player()
     @State private var showDecisionSheet = false
     @State private var showTertiarySheet = false
-    @State private var showNextStepSheet = false
+    //    @State private var showNextStepSheet = false
     @State private var showCareersSheet = true
 
-    @State private var highestDegree: Level? = nil
-    @State private var nextDegreeCandidate: (TertiaryProfile, Level)? = nil
+    //    @State private var highestDegree: Level? = nil
+    //    @State private var nextDegreeCandidate: (TertiaryProfile, Level)? = nil
+
+    @State private var selectedActivities: Set<String> = []
 
     var availableCareers: [JobDetails] {
         detailsAll.filter {
@@ -62,7 +64,7 @@ struct PlayerView: View {
                         .font(.headline)
                     Text(player.education.last!.1.description)
                     HStack {
-                        Text("Current occupation:")
+                        Text("Current occupation:").font(.headline)
                         Text(player.currentOccupation?.id ?? "Unempoeyed")
                         Text(player.currentOccupation?.icon ?? "")
                     }
@@ -71,52 +73,131 @@ struct PlayerView: View {
             }
             .padding(.top, 10)
 
-            VStack(alignment: .leading) {
-                Text("Abilities")
-                    .font(.headline)
-                ForEach(Array(Abilities.skillNames.enumerated()), id: \.offset)
-                { (idx, skill) in
-                    HStack {
-                        Text(skill.label)
-                        Spacer()
-                        Text("\(player.abilities[keyPath: skill.keyPath])")
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Soft skills:")
+                        .font(.headline)
+                    ForEach(
+                        Array(SoftSkills.skillNames.enumerated()),
+                        id: \.offset
+                    ) { (idx, skill) in
+                        HStack {
+                            Text(skill.label)
+                            Spacer()
+                            Text("\(player.softSkills[keyPath: skill.keyPath])")
+                        }
+                    }
+                }.padding()
+                VStack {
+                    Text("Hard skills:")
+                    ForEach(
+                        Array(HardSkills.skillNames.enumerated()),
+                        id: \.offset
+                    ) { (idx, skill) in
+                        HStack {
+                            Text(skill.label)
+                            Spacer()
+                            Text("\(player.hardSkills[keyPath: skill.keyPath])")
+                        }
                     }
                 }
             }
-            .padding()
 
             Divider()
 
             if player.education.last!.1.eqf < 5 {
                 Text("Choose an activity to boost a skill:")
-                ScrollView {
-                    VStack(spacing: 10) {
-                        ForEach(schoolActivities, id: \.label) { activity in
-                            Button {
-                                player.abilities[
-                                    keyPath: activity.abilityKeyPath
-                                ] += 1
-                                player.age += 1
-                            } label: {
-                                Text(activity.label)
-                                    .frame(maxWidth: .infinity)
+                HStack {
+                    ScrollView {
+                        VStack(spacing: 10) {
+                            ForEach(schoolActivities, id: \.label) { activity in
+                                Toggle(
+                                    activity.label,
+                                    isOn: Binding(
+                                        get: {
+                                            selectedActivities.contains(
+                                                activity.label
+                                            )
+                                        },
+                                        set: { isSelected in
+                                            if isSelected {
+                                                selectedActivities.insert(
+                                                    activity.label
+                                                )
+                                                player.softSkills[
+                                                    keyPath: activity
+                                                        .abilityKeyPath
+                                                ] += 1
+                                                player.age += 1
+                                            } else {
+                                                selectedActivities.remove(
+                                                    activity.label
+                                                )
+                                                player.softSkills[
+                                                    keyPath: activity
+                                                        .abilityKeyPath
+                                                ] -= 1
+                                                player.age -= 1
+                                            }
+                                        }
+                                    )
+                                )
+                                .toggleStyle(.switch)
+                                .frame(maxWidth: .infinity, alignment: .leading)
                             }
-                            .buttonStyle(.bordered)
                         }
                     }
-                }
-                .padding(.bottom, 8)
-                Button {
-                    player.age += 1
-                    player.education.append(
-                        (TertiaryProfile.trades, Level.Certified)
-                    )
-                } label: {
-                    Text("Certification")
-                        .frame(maxWidth: .infinity)
-                }
-                .buttonStyle(.borderedProminent)
-                .padding(.top, 5)
+                    .padding(.bottom, 8)
+                    ScrollView {
+                        VStack(spacing: 10) {
+                            ForEach(schoolActivities, id: \.label) { activity in
+                                Toggle(
+                                    activity.label,
+                                    isOn: Binding(
+                                        get: {
+                                            selectedActivities.contains(
+                                                activity.label
+                                            )
+                                        },
+                                        set: { isSelected in
+                                            if isSelected {
+                                                selectedActivities.insert(
+                                                    activity.label
+                                                )
+                                                player.softSkills[
+                                                    keyPath: activity
+                                                        .abilityKeyPath
+                                                ] += 1
+                                                player.age += 1
+                                            } else {
+                                                selectedActivities.remove(
+                                                    activity.label
+                                                )
+                                                player.softSkills[
+                                                    keyPath: activity
+                                                        .abilityKeyPath
+                                                ] -= 1
+                                                player.age -= 1
+                                            }
+                                        }
+                                    )
+                                )
+                                .toggleStyle(.switch)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            }
+                        }
+                        Button {
+                            player.age += 1
+                            player.education.append(
+                                (TertiaryProfile.trades, Level.Certified)
+                            )
+                        } label: {
+                            Text("Certification")
+                                .frame(maxWidth: .infinity)
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .padding(.top, 5)
+                    }}
 
             } else {
                 Button {
@@ -136,7 +217,7 @@ struct PlayerView: View {
                     VStack(spacing: 10) {
                         ForEach(collegeActivities, id: \.label) { activity in
                             Button {
-                                player.abilities[
+                                player.softSkills[
                                     keyPath: activity.abilityKeyPath
                                 ] += 1
                                 player.age += 1
@@ -151,15 +232,12 @@ struct PlayerView: View {
                 .padding(.bottom, 8)
             }
         }
-        .navigationTitle("Player Growth")
-        .padding()
         .onChange(of: player.age) { oldValue, newValue in
             if newValue == 18 {
                 showDecisionSheet = true
             }
         }
         .sheet(isPresented: $showDecisionSheet) {
-
             VStack(spacing: 18) {
                 Text("You're 18! What's your next step?")
                     .font(.title2)
@@ -190,7 +268,6 @@ struct PlayerView: View {
                 .foregroundStyle(.secondary)
             }
             .padding()
-
             .presentationDetents([.medium])
         }
         .sheet(isPresented: $showTertiarySheet) {
@@ -236,11 +313,10 @@ struct PlayerView: View {
 
                         ForEach(availableCareers) { detail in
                             NavigationLink {
-                                VStack{
+                                VStack {
                                     DetailView(detail: detail)
 
-                                    Button("Choose this job")
-                                    {
+                                    Button("Choose this job") {
                                         player.currentOccupation = detail
                                         showCareersSheet = false
                                     }.padding()
@@ -261,20 +337,6 @@ struct PlayerView: View {
             }
             .presentationDetents([.medium, .large])
         }
-    }
-}
-
-#Preview {
-    var availableCareers = detailsAll.filter { $0.requirements.education <= 5 }
-    NavigationStack {
-        ForEach(availableCareers) { detail in
-            NavigationLink {
-                DetailView(detail: detail)
-            } label: {
-                DetailRow(detail: detail)
-            }
-        }
-        .listStyle(.plain)
-
+        .padding()
     }
 }

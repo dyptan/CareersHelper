@@ -1,6 +1,21 @@
 import Foundation
+struct HardSkills: Codable, Hashable {
+    var programmingLanguages: [String]
+    var portfolioItems: [String]
+    var certifications: [String]
+    var softwareTools: [String]
+    var licenses: [String]
 
-struct Abilities: Codable, Hashable {
+    static let skillNames: [(keyPath: WritableKeyPath<HardSkills, [String]>, label: String)] = [
+        (\HardSkills.programmingLanguages, "Programming Languages"),
+        (\HardSkills.portfolioItems, "Portfolio Items"),
+        (\HardSkills.certifications, "Certifications"),
+        (\HardSkills.softwareTools, "Software Tools"),
+        (\HardSkills.licenses, "Licenses")
+    ]
+}
+
+struct SoftSkills: Codable, Hashable {
     var analyticalReasoning: Int
     var creativeExpression: Int
     var socialCommunication: Int
@@ -14,7 +29,7 @@ struct Abilities: Codable, Hashable {
     var physicalAbility: Int
     var resiliencePhysical: Int
 
-    static let skillNames: [(keyPath: WritableKeyPath<Abilities, Int>, label: String)] = [
+    static let skillNames: [(keyPath: WritableKeyPath<SoftSkills, Int>, label: String)] = [
         (\.analyticalReasoning, "Analytical Reasoning"),
         (\.creativeExpression, "Creative Expression"),
         (\.socialCommunication, "Social Communication"),
@@ -34,12 +49,13 @@ final class Player: ObservableObject {
     @Published var age: Int
     @Published var education: [(TertiaryProfile?, Level)]
     @Published var jobExperiance: Int
-    @Published var abilities: Abilities
+    @Published var softSkills: SoftSkills
+    @Published var hardSkills: HardSkills
     @Published var currentOccupation: JobDetails?
 
     init(
         age: Int = 7,
-        abilities: Abilities = Abilities(
+        abilities: SoftSkills = SoftSkills(
             analyticalReasoning: Int.random(in: 0..<3),
             creativeExpression: Int.random(in: 0..<3),
             socialCommunication: Int.random(in: 0..<3),
@@ -53,18 +69,27 @@ final class Player: ObservableObject {
             physicalAbility: 0,
             resiliencePhysical: 0
         ),
+        hardSkills: HardSkills = HardSkills(
+            programmingLanguages: [],
+            portfolioItems: [],
+            certifications: [],
+            softwareTools: [],
+            licenses: []
+        ),
         education: [(TertiaryProfile?, Level)] = [(nil, .PrimarySchool)],
         jobExperiance: Int = 0,
         currentOccupation: JobDetails? = nil
     ) {
         self.age = age
-        self.abilities = abilities
+        self.softSkills = abilities
+        self.hardSkills = hardSkills
         self.education = education
         self.jobExperiance = jobExperiance
+        self.currentOccupation = currentOccupation
     }
 
-    func boostAbility(_ keyPath: WritableKeyPath<Abilities, Int>) {
-        abilities[keyPath: keyPath] += 1
+    func boostAbility(_ keyPath: WritableKeyPath<SoftSkills, Int>) {
+        softSkills[keyPath: keyPath] += 1
     }
    
 }

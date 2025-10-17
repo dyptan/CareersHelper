@@ -92,7 +92,7 @@ enum TertiaryProfile: String, CaseIterable, Identifiable {
         }
     }
 
-    func applyBoost(to abilities: Abilities) -> Abilities {
+    func applyBoost(to abilities: SoftSkills) -> SoftSkills {
         var updatedAbilities = abilities
         switch self {
         case .stem:
