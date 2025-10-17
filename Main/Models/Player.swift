@@ -35,6 +35,7 @@ final class Player: ObservableObject {
     @Published var education: [(TertiaryProfile?, Level)]
     @Published var jobExperiance: Int
     @Published var abilities: Abilities
+    @Published var currentOccupation: JobDetails?
 
     init(
         age: Int = 7,
@@ -53,7 +54,8 @@ final class Player: ObservableObject {
             resiliencePhysical: 0
         ),
         education: [(TertiaryProfile?, Level)] = [(nil, .PrimarySchool)],
-        jobExperiance: Int = 0
+        jobExperiance: Int = 0,
+        currentOccupation: JobDetails? = nil
     ) {
         self.age = age
         self.abilities = abilities

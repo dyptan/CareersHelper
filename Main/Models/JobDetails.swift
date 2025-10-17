@@ -1,6 +1,6 @@
 import Foundation
 
-struct Detail: Identifiable, Codable, Hashable {
+struct JobDetails: Identifiable, Codable, Hashable {
     // luck: 0 = Low-paid, poor working conditions, "desperation jobs"
     // luck: 1 = Mainstream, steady jobs (nurse, teacher, technician, etc)
     // luck: 2 = Highly competitive/fast-growing, but broadly accessible (tech, design, entry data, etc)

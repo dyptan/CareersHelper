@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5596D8332E9AED0D00E98CEF /* Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5596D8192E9AE25E00E98CEF /* Migration.swift */; };
-		5596D8732E9AF67D00E98CEF /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5596D81B2E9AE4EF00E98CEF /* Detail.swift */; };
+		5596D8732E9AF67D00E98CEF /* JobDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5596D81B2E9AE4EF00E98CEF /* JobDetails.swift */; };
 		5596D8792E9AFD3700E98CEF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 5596D8782E9AFD3700E98CEF /* data.json */; };
 		55A6ECFF2E9541FD0033B674 /* DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6ECFE2E9541FD0033B674 /* DetailRow.swift */; };
 		55A6ED012E9542000033B674 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6ED002E9542000033B674 /* DetailView.swift */; };
@@ -53,7 +53,7 @@
 
 /* Begin PBXFileReference section */
 		5596D8192E9AE25E00E98CEF /* Migration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migration.swift; sourceTree = "<group>"; };
-		5596D81B2E9AE4EF00E98CEF /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		5596D81B2E9AE4EF00E98CEF /* JobDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetails.swift; sourceTree = "<group>"; };
 		5596D86A2E9AF46B00E98CEF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5596D8782E9AFD3700E98CEF /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		55A6ECFE2E9541FD0033B674 /* DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRow.swift; sourceTree = "<group>"; };
@@ -164,9 +164,8 @@
 				84F851CC2EA16C290066C41A /* Level.swift */,
 				84C2E8712E9C1C260093E507 /* Group.swift */,
 				84C2E86F2E9C1C0F0093E507 /* Category.swift */,
-				5596D81B2E9AE4EF00E98CEF /* Detail.swift */,
+				5596D81B2E9AE4EF00E98CEF /* JobDetails.swift */,
 				84F851C82EA0F30F0066C41A /* Player.swift */,
-				84F851CA2EA0F3130066C41A /* PlayerView.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +188,7 @@
 				55A6ED022E9542020033B674 /* GroupView.swift */,
 				55C06F5D2E96DEB600BD5017 /* CategoryRow.swift */,
 				55C06F5F2E96E14A00BD5017 /* GroupRow.swift */,
+				84F851CA2EA0F3130066C41A /* PlayerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 				84F851CB2EA0F3130066C41A /* PlayerView.swift in Sources */,
 				55C06F602E96E14A00BD5017 /* GroupRow.swift in Sources */,
 				55A6ED032E9542020033B674 /* GroupView.swift in Sources */,
-				5596D8732E9AF67D00E98CEF /* Detail.swift in Sources */,
+				5596D8732E9AF67D00E98CEF /* JobDetails.swift in Sources */,
 				84F851CD2EA16C290066C41A /* Level.swift in Sources */,
 				84C2E8702E9C1C0F0093E507 /* Category.swift in Sources */,
 				84C2E8722E9C1C260093E507 /* Group.swift in Sources */,

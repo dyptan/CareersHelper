@@ -15,7 +15,7 @@ struct GroupView: View {
         detailsAll.filter { $0.effectiveInterest == interest }.map { $0.category }
     }
 
-    private func careerRows(details: [Detail]) -> some View {
+    private func careerRows(details: [JobDetails]) -> some View {
         List {
             ForEach(details) { detail in
                 NavigationLink {

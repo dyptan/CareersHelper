@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct DetailView: View {
-    var detail: Detail
+    var detail: JobDetails
 
     var body: some View {
         ScrollView {
@@ -31,10 +31,7 @@ struct DetailView: View {
                     Text(detail.summary)
                         .font(.body)
                 }
-                .padding()
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .clipShape(RoundedRectangle(cornerRadius: 16))
-                .padding(.horizontal)
+                .padding()    
             }
             .padding(.bottom, 24)
         }

@@ -1,6 +1,6 @@
 import Foundation
 
-var detailsAll: [Detail] = load("dataV3.json")
+var detailsAll: [JobDetails] = load("dataV3.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
