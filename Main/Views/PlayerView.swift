@@ -88,16 +88,46 @@ struct PlayerView: View {
                         }
                     }
                 }.padding()
+                
                 VStack {
                     Text("Hard skills:")
-                    ForEach(
-                        Array(HardSkills.skillNames.enumerated()),
-                        id: \.offset
-                    ) { (idx, skill) in
-                        HStack {
-                            Text(skill.label)
-                            Spacer()
-                            Text("\(player.hardSkills[keyPath: skill.keyPath])")
+                    HStack {
+                        Text("Languages:")
+                        Spacer()
+                        ForEach(Array(player.hardSkills.languages)) { skill in
+                            Text("\(skill.rawValue)")
+                        }
+                    }
+                    
+                    HStack {
+                        Text("Portfolio Items:")
+                        Spacer()
+                        ForEach(Array(player.hardSkills.portfolioItems)) { skill in
+                            Text("\(skill.rawValue)")
+                        }
+                    }
+                    
+                    HStack {
+                        Text("Certification:")
+                        Spacer()
+                        ForEach(Array(player.hardSkills.certifications)) { skill in
+                            Text("\(skill.rawValue)")
+                        }
+                    }
+                    
+                    HStack {
+                        Text("Software:")
+                        Spacer()
+                        ForEach(Array(player.hardSkills.software)) { skill in
+                            Text("\(skill.rawValue)")
+                        }
+                    }
+                    
+                    HStack {
+                        Text("Licenses:")
+                        Spacer()
+                        ForEach(Array(player.hardSkills.licenses)) { skill in
+                            Text("\(skill.rawValue)")
                         }
                     }
                 }
@@ -148,36 +178,25 @@ struct PlayerView: View {
                         }
                     }
                     .padding(.bottom, 8)
+                    
+                    
                     ScrollView {
                         VStack(spacing: 10) {
-                            ForEach(schoolActivities, id: \.label) { activity in
+                            ForEach(Array(HardSkills().languages.sorted { $0.rawValue > $1.rawValue })) { skill in
                                 Toggle(
-                                    activity.label,
+                                    skill.rawValue,
                                     isOn: Binding(
                                         get: {
-                                            selectedActivities.contains(
-                                                activity.label
+                                            player.hardSkills.languages.contains(
+                                                skill
                                             )
                                         },
                                         set: { isSelected in
                                             if isSelected {
-                                                selectedActivities.insert(
-                                                    activity.label
-                                                )
-                                                player.softSkills[
-                                                    keyPath: activity
-                                                        .abilityKeyPath
-                                                ] += 1
-                                                player.age += 1
+                                                player.hardSkills.languages.insert(skill)
+                                            
                                             } else {
-                                                selectedActivities.remove(
-                                                    activity.label
-                                                )
-                                                player.softSkills[
-                                                    keyPath: activity
-                                                        .abilityKeyPath
-                                                ] -= 1
-                                                player.age -= 1
+                                                player.hardSkills.languages.remove(skill)
                                             }
                                         }
                                     )
@@ -186,18 +205,8 @@ struct PlayerView: View {
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             }
                         }
-                        Button {
-                            player.age += 1
-                            player.education.append(
-                                (TertiaryProfile.trades, Level.Certified)
-                            )
-                        } label: {
-                            Text("Certification")
-                                .frame(maxWidth: .infinity)
-                        }
-                        .buttonStyle(.borderedProminent)
-                        .padding(.top, 5)
-                    }}
+                    }
+                }
 
             } else {
                 Button {
@@ -230,11 +239,6 @@ struct PlayerView: View {
                     }
                 }
                 .padding(.bottom, 8)
-            }
-        }
-        .onChange(of: player.age) { oldValue, newValue in
-            if newValue == 18 {
-                showDecisionSheet = true
             }
         }
         .sheet(isPresented: $showDecisionSheet) {
@@ -301,7 +305,6 @@ struct PlayerView: View {
             }
             .presentationDetents([.medium, .large])
         }
-
         .sheet(isPresented: $showCareersSheet) {
             NavigationStack {
 
@@ -336,6 +339,11 @@ struct PlayerView: View {
                 }
             }
             .presentationDetents([.medium, .large])
+        }
+        .onChange(of: player.age) { oldValue, newValue in
+            if newValue == 18 {
+                showDecisionSheet = true
+            }
         }
         .padding()
     }

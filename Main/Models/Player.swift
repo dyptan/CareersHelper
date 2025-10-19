@@ -1,18 +1,32 @@
 import Foundation
-struct HardSkills: Codable, Hashable {
-    var programmingLanguages: [String]
-    var portfolioItems: [String]
-    var certifications: [String]
-    var softwareTools: [String]
-    var licenses: [String]
 
-    static let skillNames: [(keyPath: WritableKeyPath<HardSkills, [String]>, label: String)] = [
-        (\HardSkills.programmingLanguages, "Programming Languages"),
-        (\HardSkills.portfolioItems, "Portfolio Items"),
-        (\HardSkills.certifications, "Certifications"),
-        (\HardSkills.softwareTools, "Software Tools"),
-        (\HardSkills.licenses, "Licenses")
-    ]
+enum Language: String, Codable, Hashable, CaseIterable, Identifiable {
+    case swift, C, python, java, english, german, ukraininan
+    var id: String { rawValue }
+}
+enum PortfolioItem: String, Codable, Hashable, CaseIterable, Identifiable {
+    case app, website, game, library, paper, presentation
+    var id: String { rawValue }
+}
+enum Certification: String, Codable, Hashable, CaseIterable, Identifiable{
+    case aws, azure, google, scrum, security
+    var id: String { rawValue }
+}
+enum Software: String, Codable, Hashable, CaseIterable, Identifiable {
+    case xcode, linux, unity, photoshop, blender, excel
+    var id: String { rawValue }
+}
+enum License: String, Codable, Hashable, CaseIterable, Identifiable {
+    case drivers, pilot, nurse
+    var id: String { rawValue }
+}
+
+struct HardSkills: Codable, Hashable {
+    var languages: Set<Language> = Set(Language.allCases)
+    var portfolioItems: Set<PortfolioItem> = []
+    var certifications: Set<Certification> = []
+    var software: Set<Software> = []
+    var licenses: Set<License> = []
 }
 
 struct SoftSkills: Codable, Hashable {
@@ -70,11 +84,11 @@ final class Player: ObservableObject {
             resiliencePhysical: 0
         ),
         hardSkills: HardSkills = HardSkills(
-            programmingLanguages: [],
-            portfolioItems: [],
-            certifications: [],
-            softwareTools: [],
-            licenses: []
+            languages: [.ukraininan, .english, .german, .C, .java, .python],
+            portfolioItems: [.app],
+            certifications: [.aws],
+            software: [.linux],
+            licenses: [.drivers]
         ),
         education: [(TertiaryProfile?, Level)] = [(nil, .PrimarySchool)],
         jobExperiance: Int = 0,
@@ -93,3 +107,4 @@ final class Player: ObservableObject {
     }
    
 }
+
