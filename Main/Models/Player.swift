@@ -116,11 +116,12 @@ struct SoftSkills: Codable, Hashable {
 
 final class Player: ObservableObject {
     @Published var age: Int
-    @Published var education: [(TertiaryProfile?, Level)]
+    @Published var degrees: [(TertiaryProfile?, Level)]
     @Published var jobExperiance: [(JobDetails, Int)]
     @Published var softSkills: SoftSkills
     @Published var hardSkills: HardSkills
     @Published var currentOccupation: JobDetails?
+    @Published var currentEducation: TertiaryProfile?
 
     init(
         age: Int = 7,
@@ -145,14 +146,14 @@ final class Player: ObservableObject {
             software: [.macOS],
             licenses: []
         ),
-        education: [(TertiaryProfile?, Level)] = [(nil, .PrimarySchool)],
+        degrees: [(TertiaryProfile?, Level)] = [(nil, .PrimarySchool)],
         jobExperiance: [(JobDetails, Int)] = [],
         currentOccupation: JobDetails? = nil
     ) {
         self.age = age
         self.softSkills = abilities
         self.hardSkills = hardSkills
-        self.education = education
+        self.degrees = degrees
         self.jobExperiance = jobExperiance
         self.currentOccupation = currentOccupation
     }

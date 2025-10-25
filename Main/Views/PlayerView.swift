@@ -31,16 +31,17 @@ struct PlayerView: View {
     @State private var selectedLicences: Set<License> = []
     @State private var selectedPortfolio: Set<PortfolioItem> = []
     @State private var selectedCertifications: Set<Certification> = []
+    @State private var yearsLeftToGraduation: Int? = nil
     
     var availableCareers: [JobDetails] {
         detailsAll.filter {
-            $0.requirements.education <= player.education.last!.1.eqf
+            $0.requirements.education <= player.degrees.last!.1.eqf
         }
     }
     
     var body: some View {
         VStack(spacing: 16) {
-            VStack {
+            VStack(alignment: .leading) {
                 HStack {
                     Text("Age: \(player.age)")
                         .font(.title2)
@@ -59,7 +60,14 @@ struct PlayerView: View {
                             selectedPortfolio = []
                             selectedSoftware = []
                             selectedCertifications = []
+                            yearsLeftToGraduation? -= 1
+                            if yearsLeftToGraduation == 0 {
+                                showDecisionSheet.toggle()
+                                yearsLeftToGraduation = nil
+                                player.currentEducation = nil
+                            }
                         }
+                        
                         if player.currentOccupation != nil {
                             Button("Quit Job") {
                                 showDecisionSheet.toggle()
@@ -68,18 +76,17 @@ struct PlayerView: View {
                         }
                     }
                 }
-                
-                VStack(alignment: .leading, spacing: 2) {
-                    Text("Education Level: EQF \(player.education.last!.1.eqf)")
-                        .font(.headline)
-                    Text(player.education.last!.1.description)
-                    HStack {
-                        Text("Current occupation:").font(.headline)
-                        Text(player.currentOccupation?.id ?? "Unempoeyed")
-                        Text(player.currentOccupation?.icon ?? "")
+                Text("Education Level: EQF \(player.degrees.last!.1.eqf)")
+                Text("Degree: \(player.degrees.last!.1.description)")
+                VStack {
+                    Text("Current occupation: \(player.currentOccupation?.id ?? "None")")
+                    if player.currentEducation != nil {
+                        Text(
+                            "Current education: \(player.currentOccupation!.id)"
+                        )
                     }
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
+            
             }
             .padding(.top, 10)
             
@@ -412,7 +419,8 @@ struct PlayerView: View {
                             .padding(.vertical)
                         ForEach(TertiaryProfile.allCases) { profile in
                             Button {
-                                
+                                player.currentEducation = profile
+                                yearsLeftToGraduation = 4
                                 showTertiarySheet = false
                             } label: {
                                 VStack(alignment: .leading) {
@@ -472,8 +480,8 @@ struct PlayerView: View {
             }
             .onChange(of: player.age) { oldValue, newValue in
                 switch newValue {
-                case 10: player.education.append((nil, .MiddleSchool))
-                case 14: player.education.append((nil, .HighSchool))
+                case 10: player.degrees.append((nil, .MiddleSchool))
+                case 14: player.degrees.append((nil, .HighSchool))
                 case 18: showDecisionSheet = true
                 default: break
                 }
