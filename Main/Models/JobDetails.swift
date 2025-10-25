@@ -95,71 +95,71 @@ struct JobDetails: Identifiable, Codable, Hashable {
         }
     }
 
-    private func personaScores() -> [Group: Double] {
-        let r = requirements
+//    private func personaScores() -> [Group: Double] {
+//        let r = requirements
+//
+//        // Base scores from digitized traits
+//        var scores: [Group: Double] = [
+//            .people:      1.0 * Double(r.socialCommunication) + 0.7 * Double(r.teamLeadership) + 0.5 * Double(r.influenceAndNetworking) + 0.3 * Double(r.attentionToDetail) + 0.2 * Double(r.resilienceCognitive),
+//            .tools:       1.0 * Double(r.analyticalReasoning) + 0.7 * Double(r.attentionToDetail) + 0.5 * Double(r.spatialThinking) + 0.2 * Double(r.resilienceCognitive),
+//            .creative:    1.0 * Double(r.creativeExpression) + 0.4 * Double(r.socialCommunication),
+//            .outdoors:    1.0 * Double(r.outdoorOrientation) + 0.4 * Double(r.mechanicalOperation) + 0.3 * Double(r.physicalAbility) + 0.3 * Double(r.resiliencePhysical),
+//            .sports:      1.0 * Double(r.physicalAbility) + 0.6 * Double(r.resiliencePhysical) + 0.3 * Double(r.socialCommunication) + 0.2 * Double(r.riskTolerance),
+//            .science:     1.0 * Double(r.analyticalReasoning) + 0.7 * Double(r.attentionToDetail) + 0.4 * Double(r.spatialThinking) + 0.3 * Double(r.riskTolerance) + 0.2 * Double(r.resilienceCognitive),
+//            .mechanical:  1.0 * Double(r.mechanicalOperation) + 0.6 * Double(r.spatialThinking) + 0.4 * Double(r.riskTolerance) + 0.3 * Double(r.attentionToDetail) + 0.2 * Double(r.resiliencePhysical)
+//        ]
+//
+//        // Light nudges
+//        if r.socialCommunication >= 4 && r.teamLeadership <= 2 {
+//            scores[.people, default: 0] += 0.4
+//        }
+//        if r.teamLeadership >= 4 && r.socialCommunication >= 3 {
+//            scores[.people, default: 0] += 0.5
+//        }
+//        if r.influenceAndNetworking >= 4 && r.socialCommunication >= 3 {
+//            scores[.people, default: 0] += 0.4
+//        }
+//        if r.riskTolerance >= 4 && r.mechanicalOperation >= 3 {
+//            scores[.mechanical, default: 0] += 0.5
+//        }
+//        if r.outdoorOrientation >= 3 && r.analyticalReasoning >= 3 {
+//            scores[.science, default: 0] += 0.3
+//            scores[.outdoors, default: 0] += 0.3
+//        }
+//        if r.education >= 5 { // Higher EQF tends to reinforce Tools/Science paths
+//            scores[.tools, default: 0] += 0.3
+//            scores[.science, default: 0] += 0.3
+//        }
+//
+//        return scores
+//    }
 
-        // Base scores from digitized traits
-        var scores: [Group: Double] = [
-            .people:      1.0 * Double(r.socialCommunication) + 0.7 * Double(r.teamLeadership) + 0.5 * Double(r.influenceAndNetworking) + 0.3 * Double(r.attentionToDetail) + 0.2 * Double(r.resilienceCognitive),
-            .tools:       1.0 * Double(r.analyticalReasoning) + 0.7 * Double(r.attentionToDetail) + 0.5 * Double(r.spatialThinking) + 0.2 * Double(r.resilienceCognitive),
-            .creative:    1.0 * Double(r.creativeExpression) + 0.4 * Double(r.socialCommunication),
-            .outdoors:    1.0 * Double(r.outdoorOrientation) + 0.4 * Double(r.mechanicalOperation) + 0.3 * Double(r.physicalAbility) + 0.3 * Double(r.resiliencePhysical),
-            .sports:      1.0 * Double(r.physicalAbility) + 0.6 * Double(r.resiliencePhysical) + 0.3 * Double(r.socialCommunication) + 0.2 * Double(r.riskTolerance),
-            .science:     1.0 * Double(r.analyticalReasoning) + 0.7 * Double(r.attentionToDetail) + 0.4 * Double(r.spatialThinking) + 0.3 * Double(r.riskTolerance) + 0.2 * Double(r.resilienceCognitive),
-            .mechanical:  1.0 * Double(r.mechanicalOperation) + 0.6 * Double(r.spatialThinking) + 0.4 * Double(r.riskTolerance) + 0.3 * Double(r.attentionToDetail) + 0.2 * Double(r.resiliencePhysical)
-        ]
-
-        // Light nudges
-        if r.socialCommunication >= 4 && r.teamLeadership <= 2 {
-            scores[.people, default: 0] += 0.4
-        }
-        if r.teamLeadership >= 4 && r.socialCommunication >= 3 {
-            scores[.people, default: 0] += 0.5
-        }
-        if r.influenceAndNetworking >= 4 && r.socialCommunication >= 3 {
-            scores[.people, default: 0] += 0.4
-        }
-        if r.riskTolerance >= 4 && r.mechanicalOperation >= 3 {
-            scores[.mechanical, default: 0] += 0.5
-        }
-        if r.outdoorOrientation >= 3 && r.analyticalReasoning >= 3 {
-            scores[.science, default: 0] += 0.3
-            scores[.outdoors, default: 0] += 0.3
-        }
-        if r.education >= 5 { // Higher EQF tends to reinforce Tools/Science paths
-            scores[.tools, default: 0] += 0.3
-            scores[.science, default: 0] += 0.3
-        }
-
-        return scores
-    }
-
-    var effectiveInterest: Group {
-        // If any digitized trait is present (>0), use scoring
-        let r = requirements
-        let hasTraits =
-            r.analyticalReasoning > 0 ||
-            r.creativeExpression > 0 ||
-            r.socialCommunication > 0 ||
-            r.teamLeadership > 0 ||
-            r.influenceAndNetworking > 0 ||
-            r.riskTolerance > 0 ||
-            r.spatialThinking > 0 ||
-            r.attentionToDetail > 0 ||
-            r.resilienceCognitive > 0 ||
-            r.mechanicalOperation > 0 ||
-            r.physicalAbility > 0 ||
-            r.outdoorOrientation > 0 ||
-            r.resiliencePhysical > 0
-
-        if hasTraits {
-            let scores = personaScores()
-            if let best = scores.max(by: { $0.value < $1.value })?.key {
-                return best
-            }
-        }
-
-        // No legacy fallback; default to the category’s persona
-        return category.persona
-    }
+//    var effectiveInterest: Group {
+//        // If any digitized trait is present (>0), use scoring
+//        let r = requirements
+//        let hasTraits =
+//            r.analyticalReasoning > 0 ||
+//            r.creativeExpression > 0 ||
+//            r.socialCommunication > 0 ||
+//            r.teamLeadership > 0 ||
+//            r.influenceAndNetworking > 0 ||
+//            r.riskTolerance > 0 ||
+//            r.spatialThinking > 0 ||
+//            r.attentionToDetail > 0 ||
+//            r.resilienceCognitive > 0 ||
+//            r.mechanicalOperation > 0 ||
+//            r.physicalAbility > 0 ||
+//            r.outdoorOrientation > 0 ||
+//            r.resiliencePhysical > 0
+//
+//        if hasTraits {
+//            let scores = personaScores()
+//            if let best = scores.max(by: { $0.value < $1.value })?.key {
+//                return best
+//            }
+//        }
+//
+//        // No legacy fallback; default to the category’s persona
+//        return category.persona
+//    }
 }
