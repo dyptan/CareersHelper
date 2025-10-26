@@ -49,7 +49,7 @@ struct PlayerView: View {
                     VStack {
                         Button("+1 Year") {
                             player.age += 1
-                            player.hardSkills.certifications = selectedCertifications
+                            player.hardSkills.certifications.formUnion(selectedCertifications)
                             player.hardSkills.languages.formUnion(selectedLanguages)
                             player.hardSkills.licenses.formUnion(selectedLicences)
                             player.hardSkills.portfolioItems.formUnion(selectedPortfolio)
@@ -63,6 +63,7 @@ struct PlayerView: View {
                             yearsLeftToGraduation? -= 1
                             if yearsLeftToGraduation == 0 {
                                 showDecisionSheet.toggle()
+                                player.degrees.append((player.currentEducation, Level.Bachelor))
                                 yearsLeftToGraduation = nil
                                 player.currentEducation = nil
                             }
@@ -82,7 +83,7 @@ struct PlayerView: View {
                     Text("Current occupation: \(player.currentOccupation?.id ?? "None")")
                     if player.currentEducation != nil {
                         Text(
-                            "Current education: \(player.currentOccupation!.id)"
+                            "Current education: \(player.currentEducation!.id)"
                         )
                     }
                 }
