@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct DetailView: View {
-    var detail: JobDetails
+    var detail: Job
 
     var body: some View {
         ScrollView {
@@ -19,8 +19,8 @@ struct DetailView: View {
 
                 HStack(spacing: 16) {
                     labelBox(title: "Education", content: stars(level: detail.requirements.education))
-                    labelBox(title: "Chances", content: Text(String(repeating: "🍀", count: detail.requirements.luck)))
-                    labelBox(title: "Income", content: Text("\(detail.income)"))
+                    labelBox(title: "Prestige", content: Text(String(repeating: "😎", count: detail.prestige)))
+                    labelBox(title: "Income", content: Text(String(detail.income)))
                     labelBox(title: "Reward", content: Text(detail.reward()))
                 }
                 .padding(.horizontal)

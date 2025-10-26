@@ -38,8 +38,6 @@ enum Category: String, CaseIterable, Identifiable, Codable {
         case .health: return "🩺"
         case .education: return "📚"
         case .agriculture: return "🌾"
-
-        // New categories
         case .design: return "🖌️"
         case .language: return "🗣️"
         case .media: return "🎬"
@@ -73,8 +71,6 @@ enum Category: String, CaseIterable, Identifiable, Codable {
             return .outdoors
         case .sports:
             return .sports
-
-        // New mappings
         case .design:
             return .creative
         case .language:

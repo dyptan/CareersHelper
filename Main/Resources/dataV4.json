@@ -7,7 +7,6 @@
     "icon": "🛍️",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 1,
@@ -26,7 +25,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Cashier",
@@ -36,7 +36,6 @@
     "icon": "💳",
     "requirements": {
       "education": 1,
-      "luck": 0,
       "cognitive": {
         "analyticalReasoning": 1,
         "creativeExpression": 0,
@@ -55,7 +54,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 0
   },
   {
     "id": "Office Clerk",
@@ -65,7 +65,6 @@
     "icon": "🗃️",
     "requirements": {
       "education": 3,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 1,
@@ -84,7 +83,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Registered Nurse",
@@ -94,7 +94,6 @@
     "icon": "🩺",
     "requirements": {
       "education": 5,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 4,
         "creativeExpression": 1,
@@ -113,7 +112,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Customer Service Representative",
@@ -123,7 +123,6 @@
     "icon": "🎧",
     "requirements": {
       "education": 3,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 1,
@@ -142,7 +141,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Waiter/Waitress",
@@ -152,7 +152,6 @@
     "icon": "🍽️",
     "requirements": {
       "education": 1,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 1,
         "creativeExpression": 0,
@@ -171,7 +170,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "General Manager",
@@ -181,7 +181,6 @@
     "icon": "👔",
     "requirements": {
       "education": 5,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 2,
@@ -200,7 +199,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Elementary School Teacher",
@@ -210,7 +210,6 @@
     "icon": "👩‍🏫",
     "requirements": {
       "education": 4,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 4,
         "creativeExpression": 3,
@@ -229,7 +228,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Stock Clerk",
@@ -239,7 +239,6 @@
     "icon": "📦",
     "requirements": {
       "education": 1,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 1,
         "creativeExpression": 0,
@@ -258,7 +257,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Janitor/Cleaner",
@@ -268,7 +268,6 @@
     "icon": "🧹",
     "requirements": {
       "education": 0,
-      "luck": 0,
       "cognitive": {
         "analyticalReasoning": 0,
         "creativeExpression": 0,
@@ -287,7 +286,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 0
   },
   {
     "id": "Food Preparation Worker",
@@ -297,7 +297,6 @@
     "icon": "🥗",
     "requirements": {
       "education": 0,
-      "luck": 0,
       "cognitive": {
         "analyticalReasoning": 0,
         "creativeExpression": 0,
@@ -316,7 +315,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 0
   },
   {
     "id": "Driver/Sales Worker",
@@ -326,7 +326,6 @@
     "icon": "🚚",
     "requirements": {
       "education": 1,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 0,
@@ -345,7 +344,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Laborer/Material Mover",
@@ -355,7 +355,6 @@
     "icon": "📦",
     "requirements": {
       "education": 0,
-      "luck": 0,
       "cognitive": {
         "analyticalReasoning": 0,
         "creativeExpression": 0,
@@ -374,7 +373,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 0
   },
   {
     "id": "Secretary/Administrative Assistant",
@@ -384,7 +384,6 @@
     "icon": "✉️",
     "requirements": {
       "education": 3,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 1,
@@ -403,7 +402,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Bookkeeper/Accounting Clerk",
@@ -413,7 +413,6 @@
     "icon": "🧮",
     "requirements": {
       "education": 4,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 4,
         "creativeExpression": 0,
@@ -432,7 +431,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "General Maintenance Worker",
@@ -442,7 +442,6 @@
     "icon": "🔧",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 0,
@@ -461,7 +460,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Freight/Stock Mover",
@@ -471,7 +471,6 @@
     "icon": "🚚",
     "requirements": {
       "education": 1,
-      "luck": 0,
       "cognitive": {
         "analyticalReasoning": 0,
         "creativeExpression": 0,
@@ -490,7 +489,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 0
   },
   {
     "id": "Receptionist",
@@ -500,7 +500,6 @@
     "icon": "☎️",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 1,
         "creativeExpression": 1,
@@ -519,7 +518,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Teacher Assistant",
@@ -529,7 +529,6 @@
     "icon": "🎒",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 1,
@@ -548,7 +547,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Home Health Aide",
@@ -558,7 +558,6 @@
     "icon": "🏠",
     "requirements": {
       "education": 1,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 1,
         "creativeExpression": 0,
@@ -577,7 +576,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Assembler",
@@ -587,7 +587,6 @@
     "icon": "⚙️",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 0,
@@ -606,7 +605,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Licensed Practical Nurse",
@@ -616,7 +616,6 @@
     "icon": "💉",
     "requirements": {
       "education": 4,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 0,
@@ -635,7 +634,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Heavy Truck Driver",
@@ -645,7 +645,6 @@
     "icon": "🚛",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 0,
@@ -664,7 +663,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "First-Line Retail Supervisor",
@@ -674,7 +674,6 @@
     "icon": "🛒",
     "requirements": {
       "education": 3,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 1,
@@ -693,7 +692,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Construction Laborer",
@@ -703,7 +703,6 @@
     "icon": "🚧",
     "requirements": {
       "education": 1,
-      "luck": 0,
       "cognitive": {
         "analyticalReasoning": 1,
         "creativeExpression": 0,
@@ -722,7 +721,8 @@
         "resiliencePhysical": 5
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 0
   },
   {
     "id": "Security Guard",
@@ -732,7 +732,6 @@
     "icon": "🛡️",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 0,
@@ -751,7 +750,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Maintenance Supervisor",
@@ -761,7 +761,6 @@
     "icon": "🛠️",
     "requirements": {
       "education": 4,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 1,
@@ -780,7 +779,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Accountant/Auditor",
@@ -790,7 +790,6 @@
     "icon": "📊",
     "requirements": {
       "education": 5,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 1,
@@ -809,7 +808,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Light Truck Delivery Driver",
@@ -819,7 +819,6 @@
     "icon": "🚐",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 0,
@@ -838,7 +837,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Medical Assistant",
@@ -848,7 +848,6 @@
     "icon": "🏥",
     "requirements": {
       "education": 3,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 1,
@@ -867,7 +866,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Cook",
@@ -877,7 +877,6 @@
     "icon": "👨‍🍳",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 2,
@@ -896,7 +895,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Childcare Worker",
@@ -906,7 +906,6 @@
     "icon": "🧸",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 2,
@@ -925,7 +924,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Sales Representative",
@@ -935,7 +935,6 @@
     "icon": "🤝",
     "requirements": {
       "education": 4,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 1,
@@ -954,7 +953,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Receptionist and Information Clerk",
@@ -964,7 +964,6 @@
     "icon": "☎️",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 1,
         "creativeExpression": 1,
@@ -983,7 +982,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Nursing Assistant",
@@ -993,7 +993,6 @@
     "icon": "🩹",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 0,
@@ -1012,7 +1011,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Software Developer",
@@ -1022,7 +1022,6 @@
     "icon": "💻",
     "requirements": {
       "education": 5,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 2,
@@ -1041,7 +1040,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Farmworker/Laborer",
@@ -1051,7 +1051,6 @@
     "icon": "🚜",
     "requirements": {
       "education": 0,
-      "luck": 0,
       "cognitive": {
         "analyticalReasoning": 0,
         "creativeExpression": 0,
@@ -1070,7 +1069,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 0
   },
   {
     "id": "Receptionist (Medical Office)",
@@ -1080,7 +1080,6 @@
     "icon": "📋",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 1,
@@ -1099,7 +1098,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Construction Equipment Operator",
@@ -1109,7 +1109,6 @@
     "icon": "🏗️",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 0,
@@ -1128,7 +1127,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Truck Driver (Light Delivery)",
@@ -1138,7 +1138,6 @@
     "icon": "🚐",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 0,
@@ -1157,7 +1156,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Sales Manager",
@@ -1167,7 +1167,6 @@
     "icon": "📈",
     "requirements": {
       "education": 5,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 4,
         "creativeExpression": 2,
@@ -1186,7 +1185,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Automotive Service Technician",
@@ -1196,7 +1196,6 @@
     "icon": "🚗",
     "requirements": {
       "education": 3,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 0,
@@ -1215,7 +1214,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Food Service Supervisor",
@@ -1225,7 +1225,6 @@
     "icon": "🍴",
     "requirements": {
       "education": 3,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 1,
@@ -1244,7 +1243,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Plumber",
@@ -1254,7 +1254,6 @@
     "icon": "🚰",
     "requirements": {
       "education": 3,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 0,
@@ -1273,7 +1272,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Police Officer",
@@ -1283,7 +1283,6 @@
     "icon": "👮",
     "requirements": {
       "education": 4,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 0,
@@ -1302,7 +1301,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Electrician",
@@ -1312,7 +1312,6 @@
     "icon": "💡",
     "requirements": {
       "education": 3,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 0,
@@ -1331,7 +1330,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Business Analyst",
@@ -1341,7 +1341,6 @@
     "icon": "📈",
     "requirements": {
       "education": 5,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 1,
@@ -1360,7 +1359,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Dental Assistant",
@@ -1370,7 +1370,6 @@
     "icon": "🦷",
     "requirements": {
       "education": 3,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 0,
@@ -1389,7 +1388,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Pharmacist",
@@ -1399,7 +1399,6 @@
     "icon": "💊",
     "requirements": {
       "education": 6,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 1,
@@ -1418,7 +1417,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Administrative Services Manager",
@@ -1428,7 +1428,6 @@
     "icon": "📑",
     "requirements": {
       "education": 5,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 4,
         "creativeExpression": 1,
@@ -1447,7 +1446,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Bartender",
@@ -1457,7 +1457,6 @@
     "icon": "🍸",
     "requirements": {
       "education": 1,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 1,
         "creativeExpression": 1,
@@ -1476,7 +1475,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Physician/Doctor",
@@ -1486,7 +1486,6 @@
     "icon": "🩺",
     "requirements": {
       "education": 7,
-      "luck": 4,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 1,
@@ -1505,7 +1504,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 4
   },
   {
     "id": "Marketing Specialist",
@@ -1515,7 +1515,6 @@
     "icon": "📢",
     "requirements": {
       "education": 5,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 4,
         "creativeExpression": 3,
@@ -1534,7 +1533,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Financial Manager",
@@ -1544,7 +1544,6 @@
     "icon": "💰",
     "requirements": {
       "education": 6,
-      "luck": 4,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 1,
@@ -1563,7 +1562,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 4
   },
   {
     "id": "IT Support Specialist",
@@ -1573,7 +1573,6 @@
     "icon": "🖥️",
     "requirements": {
       "education": 3,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 4,
         "creativeExpression": 1,
@@ -1592,7 +1591,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Carpenter",
@@ -1602,7 +1602,6 @@
     "icon": "🪚",
     "requirements": {
       "education": 3,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 1,
@@ -1621,7 +1620,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Executive Assistant",
@@ -1631,7 +1631,6 @@
     "icon": "🗓️",
     "requirements": {
       "education": 4,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 2,
@@ -1650,7 +1649,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Receptionist (Hotel)",
@@ -1660,7 +1660,6 @@
     "icon": "🏨",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 1,
@@ -1679,7 +1678,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Food Scientist",
@@ -1689,7 +1689,6 @@
     "icon": "🥼",
     "requirements": {
       "education": 6,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 2,
@@ -1708,7 +1707,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Sales Engineer",
@@ -1718,7 +1718,6 @@
     "icon": "⚙️",
     "requirements": {
       "education": 5,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 2,
@@ -1737,7 +1736,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Human Resources Specialist",
@@ -1747,7 +1747,6 @@
     "icon": "🧑‍💼",
     "requirements": {
       "education": 5,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 4,
         "creativeExpression": 1,
@@ -1766,7 +1765,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Construction Supervisor",
@@ -1776,7 +1776,6 @@
     "icon": "🏗️",
     "requirements": {
       "education": 4,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 1,
@@ -1795,7 +1794,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Paramedic",
@@ -1805,7 +1805,6 @@
     "icon": "🚑",
     "requirements": {
       "education": 3,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 4,
         "creativeExpression": 1,
@@ -1824,7 +1823,8 @@
         "resiliencePhysical": 5
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Pharmacy Technician",
@@ -1834,7 +1834,6 @@
     "icon": "💊",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 0,
@@ -1853,7 +1852,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Food and Beverage Server",
@@ -1863,7 +1863,6 @@
     "icon": "🍹",
     "requirements": {
       "education": 1,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 1,
         "creativeExpression": 1,
@@ -1882,7 +1881,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Elementary/Middle School Teacher",
@@ -1892,7 +1892,6 @@
     "icon": "📚",
     "requirements": {
       "education": 4,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 4,
         "creativeExpression": 3,
@@ -1911,7 +1910,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Database Administrator",
@@ -1921,7 +1921,6 @@
     "icon": "💾",
     "requirements": {
       "education": 5,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 1,
@@ -1940,7 +1939,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Receptionist (Medical Clinic)",
@@ -1950,7 +1950,6 @@
     "icon": "📞",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 1,
@@ -1969,7 +1968,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Industrial Truck Operator",
@@ -1979,7 +1979,6 @@
     "icon": "🚜",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 0,
@@ -1998,7 +1997,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Civil Engineer",
@@ -2008,7 +2008,6 @@
     "icon": "🏗️",
     "requirements": {
       "education": 6,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 2,
@@ -2027,7 +2026,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Legal Assistant",
@@ -2037,7 +2037,6 @@
     "icon": "📄",
     "requirements": {
       "education": 4,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 4,
         "creativeExpression": 1,
@@ -2056,7 +2055,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Medical Secretary",
@@ -2066,7 +2066,6 @@
     "icon": "📝",
     "requirements": {
       "education": 3,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 1,
@@ -2085,7 +2084,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Janitorial Supervisor",
@@ -2095,7 +2095,6 @@
     "icon": "🧼",
     "requirements": {
       "education": 2,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 0,
@@ -2114,7 +2113,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Painter (Construction)",
@@ -2124,7 +2124,6 @@
     "icon": "🎨",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 1,
         "creativeExpression": 2,
@@ -2143,7 +2142,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Occupational Therapist",
@@ -2153,7 +2153,6 @@
     "icon": "🧑‍🦽",
     "requirements": {
       "education": 6,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 2,
@@ -2172,7 +2171,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Marketing Manager",
@@ -2182,7 +2182,6 @@
     "icon": "📣",
     "requirements": {
       "education": 6,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 4,
@@ -2201,7 +2200,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Computer Support Specialist",
@@ -2211,7 +2211,6 @@
     "icon": "💾",
     "requirements": {
       "education": 3,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 4,
         "creativeExpression": 1,
@@ -2230,7 +2229,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Truck Driver (Heavy and Tractor-Trailer)",
@@ -2240,7 +2240,6 @@
     "icon": "🚛",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 0,
@@ -2259,7 +2258,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Human Resources Manager",
@@ -2269,7 +2269,6 @@
     "icon": "🧑‍💼",
     "requirements": {
       "education": 6,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 2,
@@ -2288,7 +2287,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Machinist",
@@ -2298,7 +2298,6 @@
     "icon": "🛠️",
     "requirements": {
       "education": 3,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 0,
@@ -2317,7 +2316,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Bus Driver",
@@ -2327,7 +2327,6 @@
     "icon": "🚌",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 2,
         "creativeExpression": 0,
@@ -2346,7 +2345,8 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Network Administrator",
@@ -2356,7 +2356,6 @@
     "icon": "🌐",
     "requirements": {
       "education": 5,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 2,
@@ -2375,7 +2374,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Chef",
@@ -2385,7 +2385,6 @@
     "icon": "👨‍🍳",
     "requirements": {
       "education": 4,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 4,
         "creativeExpression": 4,
@@ -2404,7 +2403,8 @@
         "resiliencePhysical": 4
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Elementary School Principal",
@@ -2414,7 +2414,6 @@
     "icon": "🏫",
     "requirements": {
       "education": 6,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 5,
         "creativeExpression": 2,
@@ -2433,7 +2432,8 @@
         "resiliencePhysical": 2
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Graphic Designer",
@@ -2443,7 +2443,6 @@
     "icon": "🎨",
     "requirements": {
       "education": 4,
-      "luck": 2,
       "cognitive": {
         "analyticalReasoning": 3,
         "creativeExpression": 5,
@@ -2462,7 +2461,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 2
   },
   {
     "id": "Pharmacy Aide",
@@ -2472,7 +2472,6 @@
     "icon": "💊",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 1,
         "creativeExpression": 0,
@@ -2491,7 +2490,8 @@
         "resiliencePhysical": 1
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   },
   {
     "id": "Plasterer and Stucco Mason",
@@ -2501,7 +2501,6 @@
     "icon": "🏠",
     "requirements": {
       "education": 2,
-      "luck": 1,
       "cognitive": {
         "analyticalReasoning": 1,
         "creativeExpression": 2,
@@ -2520,7 +2519,7 @@
         "resiliencePhysical": 3
       }
     },
-    "version": 3
+    "version": 4,
+    "prestige": 1
   }
 ]
-

@@ -5,7 +5,7 @@ struct Job: Identifiable, Codable, Hashable {
     // luck: 1 = Mainstream, steady jobs (nurse, teacher, technician, etc)
     // luck: 2 = Highly competitive/fast-growing, but broadly accessible (tech, design, entry data, etc)
     // luck: 3 = Rare, niche, or out-of-date professions
-    // luck: 4 = Elite, prestigious, extremely selective (investment banker, astronaut, etc)
+    // luck: 4 = Elite, prestigious, extremely selective (investment banker, ceo, etc)
     // luck: 5 = High risk/high reward (influencer, celebrity, eSports, etc)
     //
     // education: 0 = EQF 1 (No formal education / basic skills)
@@ -34,6 +34,7 @@ struct Job: Identifiable, Codable, Hashable {
         default: return "💵💵💵"
         }
     }
+    let prestige: Int
     let summary: String
     let icon: String
     let requirements: Requirements
@@ -41,8 +42,6 @@ struct Job: Identifiable, Codable, Hashable {
 
     struct Requirements: Codable, Hashable {
         let education: Int
-        let luck: Int
-
         let cognitive: Cognitive
         let physical: Physical
 

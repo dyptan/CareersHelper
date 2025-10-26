@@ -33,7 +33,7 @@ struct PlayerView: View {
     @State private var selectedCertifications: Set<Certification> = []
     @State private var yearsLeftToGraduation: Int? = nil
     
-    var availableCareers: [JobDetails] {
+    var availableCareers: [Job] {
         detailsAll.filter {
             $0.requirements.education <= player.degrees.last!.1.eqf
         }
@@ -63,7 +63,9 @@ struct PlayerView: View {
                             yearsLeftToGraduation? -= 1
                             if yearsLeftToGraduation == 0 {
                                 showDecisionSheet.toggle()
-                                player.degrees.append((player.currentEducation, Level.Bachelor))
+                                if let currentEducation = player.currentEducation {
+                                    player.degrees.append(currentEducation)
+                                }
                                 yearsLeftToGraduation = nil
                                 player.currentEducation = nil
                             }
@@ -81,9 +83,9 @@ struct PlayerView: View {
                 Text("Degree: \(player.degrees.last!.1.description)")
                 VStack {
                     Text("Current occupation: \(player.currentOccupation?.id ?? "None")")
-                    if player.currentEducation != nil {
+                    if let currentEducation = player.currentEducation {
                         Text(
-                            "Current education: \(player.currentEducation!.id)"
+                            "Current education: \(currentEducation)"
                         )
                     }
                 }
@@ -405,7 +407,7 @@ struct PlayerView: View {
                     .buttonStyle(.bordered)
                     
                     Button("Cancel") {
-                        showDecisionSheet = false
+                        showDecisionSheet.toggle()
                     }
                     .foregroundStyle(.secondary)
                 }
@@ -419,26 +421,34 @@ struct PlayerView: View {
                             .font(.title2)
                             .padding(.vertical)
                         ForEach(TertiaryProfile.allCases) { profile in
-                            Button {
-                                player.currentEducation = profile
-                                yearsLeftToGraduation = 4
-                                showTertiarySheet = false
-                            } label: {
-                                VStack(alignment: .leading) {
-                                    Text(profile.rawValue)
-                                        .font(.headline)
-                                    Text(profile.description)
-                                        .font(.caption)
+                            if let next = player.degrees.last?.1.next {
+                                HStack {
+                                    ForEach(next){ level in
+                                        Button {
+                                            player.currentEducation = (profile, level)
+                                            yearsLeftToGraduation = level.yearsToComplete()
+                                            showTertiarySheet.toggle()
+                                        } label: {
+                                            VStack(alignment: .leading) {
+                                                Text(profile.rawValue)
+                                                    .font(.headline)
+                                                Text(profile.description)
+                                                    .font(.caption)
+                                                Text(level.rawValue)
+                                            }
+                                            .frame(maxWidth: .infinity, alignment: .leading)
+                                        }
+                                        .buttonStyle(.borderedProminent)
+                                    }
                                 }
-                                .frame(maxWidth: .infinity, alignment: .leading)
                             }
-                            .buttonStyle(.borderedProminent)
                         }
                         Button("Find a job") {
                             showTertiarySheet = false
                             showCareersSheet = true
                         }
                         .foregroundStyle(.secondary)
+                        .buttonStyle(.borderedProminent)
                     }
                     .padding()
                 }
@@ -460,7 +470,7 @@ struct PlayerView: View {
                                         
                                         Button("Choose this job") {
                                             player.currentOccupation = detail
-                                            showCareersSheet = false
+                                            showCareersSheet.toggle()
                                         }.padding()
                                     }
                                 } label: {
@@ -470,7 +480,7 @@ struct PlayerView: View {
                             .listStyle(.plain)
                             
                             Button("Close") {
-                                showCareersSheet = false
+                                showCareersSheet.toggle()
                             }
                             .padding(.top)
                         }

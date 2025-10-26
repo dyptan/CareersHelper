@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct DetailRow: View {
-    var detail: JobDetails
+    var detail: Job
 
     var body: some View {
         HStack(spacing: 12) {
@@ -27,7 +27,7 @@ struct DetailRow: View {
 
                 HStack(spacing: 8) {
                     DifficultyView(level: detail.requirements.education)
-                    ChancesView(chances: detail.requirements.luck)
+                    PrestigeView(prestige: detail.prestige)
                 }
             }
             Spacer()
@@ -48,11 +48,11 @@ private struct DifficultyView: View {
     }
 }
 
-private struct ChancesView: View {
-    let chances: Int
+private struct PrestigeView: View {
+    let prestige: Int
     var body: some View {
         HStack(spacing: 4) {
-            Text(String(repeating: "🍀", count: chances))
+            Text(String(repeating: "😎", count: prestige))
         }
         .font(.caption)
     }
